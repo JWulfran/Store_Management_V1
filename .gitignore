@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+env/
+venv/
+.venv/
+
+# Environment variables
+.env
+.env.*
+
+# Allow example environment file
+!.env.example
+
+# Local database
+db.sqlite3
+*.sqlite3
+
+# Media
+media/
+
+# IDE
+.vscode/
+.vs/
+
+# Cache
+.pytest_cache/

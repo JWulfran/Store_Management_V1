@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block css %}
+<link rel="stylesheet"
+      href="{% static 'css/dashboard_style.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-container">
+
+    <header class="dashboard-header">
+        <div>
+            <h2>Store Dashboard</h2>
+            <p>Vue d'ensemble des performances du magasin</p>
+        </div>
+    </header>
+
+    <!-- KPI CARDS -->
+
+    <section class="dashboard-grid">
+
+        <div class="kpi-card">
+            <span>Chiffre d'affaires</span>
+            <h3>{{ total_revenue|floatformat:2 }} $</h3>
+            <p>{{ total_sales }} transactions</p>
+        </div>
+
+        <div class="kpi-card">
+            <span>Total des achats</span>
+            <h3>{{ total_purchases|floatformat:2 }} $</h3>
+            <p>{{ quantity_purchased }} unités achetées</p>
+        </div>
+
+        <div class="kpi-card">
+            <span>Valeur du stock</span>
+            <h3>{{ inventory_value|floatformat:2 }} $</h3>
+            <p>{{ total_products }} produits actifs</p>
+        </div>
+
+        <div class="kpi-card">
+            <span>Stock faible</span>
+            <h3>{{ low_stock_products }}</h3>
+            <p>{{ out_of_stock_products }} produits épuisés</p>
+        </div>
+
+    </section>
+
+
+    <!-- CHARTS -->
+
+    <section class="charts-grid">
+
+        <div class="dashboard-card">
+            <h3>Évolution des ventes</h3>
+            <div class="chart-container">
+                <canvas id="salesChart"></canvas>
+            </div>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Évolution des achats</h3>
+            <div class="chart-container">
+                <canvas id="purchasesChart"></canvas>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- TOP PRODUCTS -->
+
+    <section class="dashboard-card">
+        <h3>Top 5 des produits vendus</h3>
+
+        <div class="table-responsive">
+            <table class="dashboard-table">
+                <thead>
+                    <tr>
+                        <th>Produit</th>
+                        <th>SKU</th>
+                        <th>Quantité vendue</th>
+                        <th>Chiffre d'affaires</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for product in top_products %}
+                    <tr>
+                        <td>{{ product.product__name }}</td>
+                        <td>{{ product.product__sku }}</td>
+                        <td>{{ product.total_quantity }}</td>
+                        <td>
+                            {{ product.total_revenue|floatformat:2 }} $
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="4">
+                            Aucune vente enregistrée.
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- RECENT TRANSACTIONS -->
+
+    <section class="charts-grid">
+
+        <div class="dashboard-card">
+            <h3>Ventes récentes</h3>
+
+            <div class="table-responsive">
+                <table class="dashboard-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Produit</th>
+                            <th>Montant</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {% for sale in recent_sales %}
+                        <tr>
+                            <td>{{ sale.date|date:"d/m/Y" }}</td>
+                            <td>{{ sale.product.name }}</td>
+                            <td>
+                                {{ sale.total|floatformat:2 }} $
+                            </td>
+                        </tr>
+                        {% empty %}
+                        <tr>
+                            <td colspan="3">Aucune vente.</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Achats récents</h3>
+
+            <div class="table-responsive">
+                <table class="dashboard-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Produit</th>
+                            <th>Montant</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {% for purchase in recent_purchases %}
+                        <tr>
+                            <td>{{ purchase.date|date:"d/m/Y" }}</td>
+                            <td>{{ purchase.product.name }}</td>
+                            <td>
+                                {{ purchase.total|floatformat:2 }} $
+                            </td>
+                        </tr>
+                        {% empty %}
+                        <tr>
+                            <td colspan="3">Aucun achat.</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+<!-- Securely pass Django data to JavaScript -->
+
+{{ month_labels|json_script:"month-labels" }}
+{{ monthly_sales|json_script:"monthly-sales" }}
+{{ monthly_purchases|json_script:"monthly-purchases" }}
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
+<script src="{% static 'js/dashboard.js' %}"></script>
+
+{% endblock %}

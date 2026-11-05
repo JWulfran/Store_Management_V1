@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Achats
+{% endblock %}
+
+{% block css %}
+    <link rel= "stylesheet" href="{% static 'css/purchases_style.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <div>
+            <h2>Achats</h2>
+
+            <p class="text-muted">
+                Consulter l'historique des achats de marchandises.
+            </p>
+        </div>
+
+
+        <a
+            href="{% url 'purchases:purchase_create' %}"
+            class="btn btn-primary"
+        >
+            + Nouvel achat
+        </a>
+
+    </div>
+
+
+    {% if messages %}
+
+        {% for message in messages %}
+
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+
+        {% endfor %}
+
+    {% endif %}
+
+
+    <div class="card">
+
+        <div class="card-header">
+
+            <h5 class="mb-0">
+                Historique des achats
+            </h5>
+
+        </div>
+
+
+        <div class="card-body">
+
+            <div class="table-responsive">
+
+                <table class="table table-hover">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Date</th>
+
+                            <th>Fournisseur</th>
+
+                            <th>Produit</th>
+
+                            <th>Quantité</th>
+
+                            <th>Prix unitaire</th>
+
+                            <th>Total</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        {% for purchase in purchases %}
+
+                            <tr>
+
+                                <td>
+                                    {{ purchase.date }}
+                                </td>
+
+                                <td>
+                                    {{ purchase.supplier }}
+                                </td>
+
+                                <td>
+                                    {{ purchase.product.name }}
+                                </td>
+
+                                <td>
+                                    {{ purchase.quantity }}
+                                </td>
+
+                                <td>
+                                    {{ purchase.unit_price|floatformat:2 }} $
+                                </td>
+
+                                <td>
+                                    {{ purchase.total|floatformat:2 }} $
+                                </td>
+
+                            </tr>
+
+                        {% empty %}
+
+                            <tr>
+
+                                <td
+                                    colspan="6"
+                                    class="text-center text-muted py-4"
+                                >
+                                    Aucun achat enregistré.
+                                </td>
+
+                            </tr>
+
+                        {% endfor %}
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

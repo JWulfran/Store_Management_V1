@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+    Produits | Store Manager
+{% endblock %}
+
+{% block content %}
+    <!-- Contenu principal -->
+    <main class="main-content">
+
+        <!-- En-tête -->
+        <header class="page-header">
+
+            <div>
+                <h1>Produits</h1>
+                <p>Gérez les produits et consultez l'état de votre stock.</p>
+            </div>
+
+            <button class="btn-primary">
+                + Ajouter un produit
+            </button>
+
+        </header>
+
+
+        <!-- Recherche -->
+        <section class="products-toolbar">
+
+            <div class="search-box">
+                <input
+                    id="product-search"
+                    type="text"
+                    placeholder="Rechercher un produit..."
+                >
+            </div>
+
+        </section>
+
+
+        <!-- Tableau des produits -->
+        <section class="products-section">
+
+            <table class="products-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Produit</th>
+                        <th>Catégorie</th>
+                        <th>Prix d'achat</th>
+                        <th>Prix de vente</th>
+                        <th>Stock</th>
+                        <th>Statut</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="products-table-body">
+                    {% for product in products %}
+                    <tr class ="product-row">
+                        <td>
+                            <div class = "product-name">
+                                <strong>{{product.name}}</strong>
+                                <span>{{product.sku}}</span>
+                            <div>
+                        </td>
+                        <td>
+                            {{product.category.name}}
+                        </td>
+                        <td>
+                            {{product.purchase_price}}
+                        </td>
+                        <td>
+                            {{product.selling_price}}
+                        </td>
+                        <td>
+                            {{product.stock}}
+                        </td>
+                        <td>
+
+                            {% if product.stock == 0 %}
+
+                                <span class = "status out-of-stock">
+                                    Rupture
+                                </span>
+
+                            {% elif product.stock <= 10 %}
+
+                                <span class="status low">
+                                    Stock faible
+                                </span>
+
+                            {% else %}
+
+                                <span class="status available">
+                                    Disponible
+                                </span>
+
+                            {% endif %}
+
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="7">
+                            Aucun Produit enregistré.
+                        </td>
+                    </r>
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'js/product.js' %}"> </script>
+{% endblock %}

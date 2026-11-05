@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+Nouvel achat
+{% endblock %}
+
+{% block css %}
+    <link rel= "stylesheet" href="{% static 'css/purchases_style.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <div class="mb-4">
+
+        <h2>Nouvel achat</h2>
+
+        <p class="text-muted">
+            Enregistrer un nouvel achat de marchandises.
+        </p>
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-lg-7 col-xl-6">
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <h5 class="mb-0">
+                        Informations de l'achat
+                    </h5>
+
+                </div>
+
+
+                <div class="card-body">
+
+                    <form method="POST">
+
+                        {% csrf_token %}
+
+
+                        <div class="mb-3">
+
+                            <label
+                                for="{{ form.supplier.id_for_label }}"
+                                class="form-label"
+                            >
+                                Fournisseur
+                            </label>
+
+                            {{ form.supplier }}
+
+                            {{ form.supplier.errors }}
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label
+                                for="{{ form.product.id_for_label }}"
+                                class="form-label"
+                            >
+                                Produit
+                            </label>
+
+                            {{ form.product }}
+
+                            {{ form.product.errors }}
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label
+                                for="{{ form.quantity.id_for_label }}"
+                                class="form-label"
+                            >
+                                Quantité
+                            </label>
+
+                            {{ form.quantity }}
+
+                            {{ form.quantity.errors }}
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label
+                                for="{{ form.unit_price.id_for_label }}"
+                                class="form-label"
+                            >
+                                Prix unitaire
+                            </label>
+
+                            {{ form.unit_price }}
+
+                            {{ form.unit_price.errors }}
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label
+                                for="{{ form.date.id_for_label }}"
+                                class="form-label"
+                            >
+                                Date
+                            </label>
+
+                            {{ form.date }}
+
+                            {{ form.date.errors }}
+
+                        </div>
+
+
+                        <div class="d-flex gap-2 mt-4">
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary"
+                            >
+                                Enregistrer l'achat
+                            </button>
+
+
+                            <a
+                                href="{% url 'purchases:purchase_list' %}"
+                                class="btn btn-secondary"
+                            >
+                                Annuler
+                            </a>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+{{ product_prices|json_script:"product-prices" }}
+
+<script
+    src="{% static 'js/purchases.js' %}"
+></script>
+
+{% endblock %}

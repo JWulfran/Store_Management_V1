@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    {% block title %}
+    {% endblock %} | Store Manager
+    </title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block css %}
+    {% endblock %}
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <h2 class="logo">StoreManager</h2>
+
+        <nav class= "sidebar-nav">
+            <a href="{% url 'dashboard:home' %} " class="{% if request.resolver_match.namespace == 'home' %}active{% endif %}">Dashboard</a>
+            <a href="{% url 'products:product_list' %} " class="{% if request.resolver_match.namespace == 'products' %}active{% endif %}">Produits</a>
+            <a href="{% url 'purchases:purchase_list' %}" class="{% if request.resolver_match.namespace == 'purchases' %}active{% endif %}">Achats</a>
+            <a href="{% url 'sales:sales_list' %}" class="{% if request.resolver_match.namespace == 'sales' %}active{% endif %}">Ventes</a>
+        </nav>
+
+    </aside>
+
+    {% block content %}
+    {% endblock %}
+
+</div>
+
+{% block js %}
+{% endblock %}
+
+</body>
+</html>

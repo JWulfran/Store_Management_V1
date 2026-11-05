@@ -1,0 +1,1001 @@
+﻿id,supplier,product_id,quantity,unit_price,date,total_cost
+1503,Lemire-Dion,103,56,3.24,2026-10-09,181.44
+1504,Lessard-Thibault,108,50,3.40,2026-10-09,170.00
+1505,"Coulombe, Côté and Beaulieu",89,55,4.93,2026-10-09,271.15
+1905,Grégoire Inc,114,55,2.79,2026-10-09,153.45
+1705,Dufresne LLC,88,64,2.27,2026-10-07,145.28
+1904,"Massé, Marcotte and Tanguay",109,44,3.98,2026-10-07,175.12
+1704,Prévost Inc,93,41,3.05,2026-10-06,125.05
+1501,Martineau-Jean,86,79,4.15,2026-10-05,327.85
+1502,Brassard Group,86,40,6.07,2026-10-05,242.80
+1703,Desrochers-Lacasse,106,60,8.57,2026-10-05,514.20
+1500,"Daigle, Villeneuve and Asselin",91,66,3.51,2026-10-04,231.66
+1702,"Lemieux, Fournier and Duchesne",102,63,10.39,2026-10-04,654.57
+1902,"Lessard, Benoît and Dufresne",102,79,7.01,2026-10-04,553.79
+1903,"Fournier, Labelle and Archambault",83,41,2.75,2026-10-04,112.75
+1701,Harvey Inc,79,53,1.91,2026-10-02,101.23
+1700,"Labbé, Trottier and Turcotte",89,54,4.48,2026-10-01,241.92
+1900,Boivin-Bertrand,85,47,1.10,2026-10-01,51.70
+1901,Ouellet LLC,85,54,1.00,2026-10-01,54.00
+1499,Denis Inc,114,46,2.65,2026-09-30,121.90
+1498,Marcotte Ltd,108,62,2.63,2026-09-29,163.06
+1697,Couture PLC,78,42,2.79,2026-09-29,117.18
+1698,Côté-Benoît,85,40,0.76,2026-09-29,30.40
+1699,"Richard, Boisvert and Harvey",86,60,4.63,2026-09-29,277.80
+1696,"Blouin, Bédard and Bilodeau",102,72,9.48,2026-09-28,682.56
+1899,Richer-Beaudry,112,55,2.47,2026-09-27,135.85
+1695,Paradis-Daigle,92,42,4.85,2026-09-26,203.70
+1497,Rodrigue-Séguin,90,61,4.28,2026-09-25,261.08
+1694,Lebel and Sons,79,59,2.21,2026-09-25,130.39
+1898,Poulin-Turcotte,113,80,1.91,2026-09-25,152.80
+1693,"Jean, Bilodeau and Croteau",91,42,3.62,2026-09-24,152.04
+1897,Harvey Group,82,45,0.41,2026-09-24,18.45
+1896,St-Onge-Trépanier,79,40,2.27,2026-09-23,90.80
+1496,"Racine, Gélinas and Potvin",113,70,2.39,2026-09-22,167.30
+1692,Brassard Group,94,41,5.24,2026-09-19,214.84
+1495,Jean Group,91,68,3.84,2026-09-18,261.12
+1691,Létourneau-Potvin,112,60,2.01,2026-09-18,120.60
+1494,Simard-Côté,102,57,10.00,2026-09-17,570.00
+1690,Pilon LLC,79,78,1.61,2026-09-17,125.58
+1492,Chartrand PLC,102,64,6.75,2026-09-16,432.00
+1493,St-Onge Inc,89,55,4.22,2026-09-16,232.10
+1893,"Paquin, Boisvert and Boily",84,65,1.35,2026-09-16,87.75
+1894,"Gaudreault, Bernard and Archambault",96,57,3.29,2026-09-16,187.53
+1895,Archambault-Fréchette,101,77,4.63,2026-09-16,356.51
+1892,Legault-Turcotte,113,71,2.21,2026-09-14,156.91
+1491,"Larocque, Brunet and Nadeau",80,68,0.70,2026-09-13,47.60
+1689,"Tardif, Caron and Poirier",95,68,3.41,2026-09-13,231.88
+1686,"Fréchette, Labbé and Lachance",86,77,4.47,2026-09-12,344.19
+1687,"Boucher, Smith and Roy",114,44,2.72,2026-09-12,119.68
+1688,Beauchamp-Lemay,109,62,5.03,2026-09-12,311.86
+1489,Parent-Lapointe,97,44,4.18,2026-09-11,183.92
+1490,Morin Inc,101,51,4.95,2026-09-11,252.45
+1685,"Maltais, Plourde and Girard",103,66,2.84,2026-09-11,187.44
+1891,Picard-Houle,94,67,3.82,2026-09-11,255.94
+1488,"Drolet, Croteau and Michaud",114,62,2.55,2026-09-10,158.10
+1487,Boucher-Labelle,112,58,1.84,2026-09-08,106.72
+1684,Martel-Trudel,104,40,3.00,2026-09-08,120.00
+1682,"Pilon, St-Pierre and Vézina",113,70,2.09,2026-09-07,146.30
+1683,Nadeau-Martin,78,52,3.69,2026-09-07,191.88
+1890,Mercier-Thériault,88,63,2.31,2026-09-07,145.53
+1680,"Martineau, Pelletier and Villeneuve",90,72,4.23,2026-09-06,304.56
+1681,"Rioux, Paquin and Lemay",95,69,3.37,2026-09-06,232.53
+1889,Boily-Richer,100,79,3.50,2026-09-06,276.50
+1888,"Delisle, Labelle and Lauzon",79,57,1.94,2026-09-05,110.58
+1484,Jean PLC,99,60,7.01,2026-09-04,420.60
+1485,Boily and Sons,108,48,2.83,2026-09-04,135.84
+1486,"Cyr, Croteau and Guay",109,74,3.84,2026-09-04,284.16
+1887,St-Laurent Group,105,78,10.04,2026-09-03,783.12
+1886,Richard Inc,105,49,10.79,2026-09-02,528.71
+1482,Guillemette LLC,95,65,2.60,2026-08-31,169.00
+1483,Perron-Jean,83,55,3.39,2026-08-31,186.45
+1679,Dumas Inc,86,77,4.95,2026-08-31,381.15
+1883,"Daigle, Labonté and Fournier",109,66,5.52,2026-08-30,364.32
+1884,Vaillancourt-Rodrigue,80,68,0.63,2026-08-30,42.84
+1885,Lemieux-Turgeon,102,48,6.88,2026-08-30,330.24
+1882,Roberge-Plante,93,52,4.73,2026-08-29,245.96
+1481,Caron-Patel,88,47,2.87,2026-08-28,134.89
+1480,"Mercier, Paré and Lauzon",110,51,3.07,2026-08-26,156.57
+1677,Allard Group,79,56,1.91,2026-08-26,106.96
+1678,"Deschênes, Beauregard and Boucher",107,41,2.23,2026-08-26,91.43
+1881,Drolet-Émond,99,58,6.47,2026-08-26,375.26
+1479,"Potvin, Denis and Champagne",100,78,2.87,2026-08-25,223.86
+1880,Roy Inc,104,59,3.77,2026-08-25,222.43
+1879,Cloutier-Lafontaine,80,49,0.56,2026-08-24,27.44
+1877,Vachon-Bérubé,93,75,4.67,2026-08-23,350.25
+1878,Allard Ltd,97,65,3.91,2026-08-23,254.15
+1478,Plante Inc,86,74,4.55,2026-08-22,336.70
+1673,Bilodeau-Lacasse,99,49,4.85,2026-08-21,237.65
+1674,"Gingras, Raymond and Asselin",108,64,2.73,2026-08-21,174.72
+1675,Parent Ltd,85,54,0.90,2026-08-21,48.60
+1676,Cloutier-Gagnon,105,68,10.79,2026-08-21,733.72
+1672,Deschênes PLC,104,69,3.65,2026-08-19,251.85
+1671,Beaulieu-Morissette,106,77,8.46,2026-08-18,651.42
+1670,Bédard-Tanguay,88,70,2.63,2026-08-17,184.10
+1876,Boulanger-Savoie,87,67,14.24,2026-08-16,954.08
+1668,Raymond Group,101,45,5.51,2026-08-15,247.95
+1669,Dumont PLC,90,65,3.88,2026-08-15,252.20
+1875,Trottier-Paré,109,69,3.77,2026-08-15,260.13
+1874,Michaud-Vézina,104,58,4.19,2026-08-14,243.02
+1477,Thibault Group,94,54,5.77,2026-08-13,311.58
+1667,Béland-Charette,88,61,2.11,2026-08-13,128.71
+1476,Tardif-Dupuis,86,59,4.79,2026-08-12,282.61
+1873,"Drouin, Mercier and Arsenault",102,69,6.88,2026-08-12,474.72
+1871,Lussier-Michaud,107,59,2.53,2026-08-11,149.27
+1872,Savoie PLC,79,43,2.06,2026-08-11,88.58
+1870,"Chouinard, Soucy and Bédard",106,49,6.37,2026-08-10,312.13
+1665,St-Onge Ltd,94,60,5.92,2026-08-09,355.20
+1666,"Bélanger, Tardif and Lachance",100,52,2.56,2026-08-09,133.12
+1869,Deschênes-Gosselin,103,54,3.89,2026-08-09,210.06
+1664,"Brassard, Charette and Gélinas",92,41,6.65,2026-08-07,272.65
+1475,Langlois Ltd,111,78,1.34,2026-08-06,104.52
+1663,Blouin-Lavallée,82,46,0.46,2026-08-06,21.16
+1662,Blais-Deschênes,101,53,5.67,2026-08-05,300.51
+1474,"Lapierre, Audet and Massé",86,64,5.03,2026-08-04,321.92
+1661,Smith-Boulanger,109,61,3.84,2026-08-04,234.24
+1660,Carrier and Sons,87,42,10.44,2026-08-03,438.48
+1868,"Gilbert, Pépin and Beauchamp",97,76,2.75,2026-08-03,209.00
+1659,Thériault Inc,112,63,1.88,2026-08-01,118.44
+1867,Trottier-Marchand,103,80,3.74,2026-08-01,299.20
+1866,Lavoie Ltd,94,74,4.04,2026-07-31,298.96
+1657,"Labonté, Dupuis and Villeneuve",87,50,14.81,2026-07-30,740.50
+1658,Labrecque-Dufour,95,55,2.60,2026-07-30,143.00
+1471,"Forget, Mercier and Gendron",100,51,2.33,2026-07-29,118.83
+1472,Blanchette LLC,94,50,5.09,2026-07-29,254.50
+1473,Leblanc-Boily,109,50,3.98,2026-07-29,199.00
+1656,Provencher-Rodrigue,102,68,9.09,2026-07-29,618.12
+1865,Gagné LLC,79,66,2.30,2026-07-28,151.80
+1655,"Goulet, Dubé and Laplante",78,78,3.09,2026-07-26,241.02
+1863,Bouchard-Lussier,113,49,1.55,2026-07-26,75.95
+1864,"Bilodeau, Plante and Arsenault",80,45,0.45,2026-07-26,20.25
+1654,"Couture, Lussier and Laplante",92,41,6.02,2026-07-25,246.82
+1862,Desrosiers and Sons,106,45,7.03,2026-07-25,316.35
+1469,Massé and Sons,112,42,2.37,2026-07-24,99.54
+1470,"Bolduc, Morissette and Godin",90,42,3.71,2026-07-24,155.82
+1861,"Lavigne, Morin and Roy",105,72,7.64,2026-07-23,550.08
+1653,Leduc Group,111,74,1.57,2026-07-22,116.18
+1651,"Picard, Savard and Paradis",89,71,3.44,2026-07-21,244.24
+1652,Vallée-Dallaire,100,57,2.83,2026-07-21,161.31
+1468,Parent-Provencher,113,77,1.82,2026-07-19,140.14
+1466,"Vaillancourt, Leblanc and Audet",110,46,3.07,2026-07-18,141.22
+1467,"Langlois, Labrecque and Beaudoin",109,47,3.56,2026-07-18,167.32
+1650,Nadeau-Vachon,105,73,7.79,2026-07-17,568.67
+1465,"Trépanier, Desrosiers and Ouellet",109,55,5.59,2026-07-16,307.45
+1859,Fontaine-Gravel,106,50,7.03,2026-07-16,351.50
+1860,"Bérubé, Charbonneau and Trépanier",109,44,5.52,2026-07-16,242.88
+1463,"Fillion, Desbiens and Champagne",85,56,1.06,2026-07-14,59.36
+1464,"Martin, Lachance and Vaillancourt",89,46,4.54,2026-07-14,208.84
+1856,Boucher Inc,104,48,3.65,2026-07-14,175.20
+1857,Plante-Boucher,95,44,2.78,2026-07-14,122.32
+1858,"Bernard, Raymond and Massé",109,67,4.33,2026-07-14,290.11
+1649,"Martin, Godin and Durand",98,56,4.54,2026-07-13,254.24
+1855,"Côté, Racine and Roberge",106,73,7.47,2026-07-13,545.31
+1648,Jean-Houde,98,54,5.13,2026-07-12,277.02
+1854,Giroux-Lapierre,101,64,4.55,2026-07-11,291.20
+1462,"Laliberté, Paquette and Robitaille",83,78,3.49,2026-07-10,272.22
+1647,Vallée Ltd,79,40,2.36,2026-07-10,94.40
+1853,Champagne Group,110,79,3.51,2026-07-09,277.29
+1461,Bouchard Ltd,112,44,2.53,2026-07-08,111.32
+1850,Delisle-Vaillancourt,99,80,6.02,2026-07-08,481.60
+1851,Martineau Inc,83,43,3.49,2026-07-08,150.07
+1852,Desbiens-Giroux,105,73,7.94,2026-07-08,579.62
+1459,Demers LLC,78,63,3.29,2026-07-07,207.27
+1460,Lamontagne Inc,80,70,0.57,2026-07-07,39.90
+1849,Gagnon-Morissette,111,61,1.57,2026-07-07,95.77
+1848,"Labrecque, Forget and Dumont",111,60,1.92,2026-07-06,115.20
+1646,Laliberté LLC,86,69,5.11,2026-07-05,352.59
+1847,Lavigne Group,103,40,3.29,2026-07-05,131.60
+1458,Dubois Group,102,74,8.44,2026-07-04,624.56
+1457,Leblanc LLC,84,69,1.31,2026-07-03,90.39
+1645,Lachance Group,82,68,0.36,2026-07-03,24.48
+1455,Trudel-Labelle,78,62,3.94,2026-07-02,244.28
+1456,"Lacasse, Sirois and Desjardins",101,62,4.23,2026-07-02,262.26
+1644,Beauregard-Beaudoin,105,65,9.29,2026-07-01,603.85
+1453,Marchand PLC,92,75,5.12,2026-06-30,384.00
+1454,"Auger, Lemire and Leclerc",81,61,2.56,2026-06-30,156.16
+1643,Smith Group,109,64,3.77,2026-06-29,241.28
+1846,"Patel, Émond and Fréchette",101,49,5.35,2026-06-29,262.15
+1452,St-Onge Ltd,102,44,8.05,2026-06-28,354.20
+1451,Dufour-Lussier,110,50,4.34,2026-06-27,217.00
+1642,Roy Ltd,85,58,0.78,2026-06-27,45.24
+1450,Lapointe and Sons,90,60,4.05,2026-06-26,243.00
+1641,Goulet Ltd,88,52,2.91,2026-06-26,151.32
+1845,Therrien-Paradis,87,49,12.53,2026-06-26,613.97
+1640,"Lachance, Therrien and Champagne",113,78,1.67,2026-06-24,130.26
+1449,"Laplante, Létourneau and Renaud",87,62,13.10,2026-06-22,812.20
+1843,Lachance PLC,114,72,1.99,2026-06-22,143.28
+1844,Dupont-Ménard,96,41,2.69,2026-06-22,110.29
+1448,"Croteau, Brunet and Daigle",85,75,1.01,2026-06-21,75.75
+1639,"Landry, Lavallée and Vallée",106,45,8.46,2026-06-21,380.70
+1842,Lacasse LLC,93,79,4.49,2026-06-21,354.71
+1445,"Ferland, Auger and Cormier",86,59,4.79,2026-06-20,282.61
+1446,Boily Inc,97,60,4.02,2026-06-20,241.20
+1447,Dionne-Chabot,95,51,3.23,2026-06-20,164.73
+1444,"Vaillancourt, Houde and Bernier",82,47,0.39,2026-06-19,18.33
+1638,"Prévost, Forget and Lévesque",89,80,3.96,2026-06-19,316.80
+1442,Paquette-Gauthier,93,76,4.73,2026-06-17,359.48
+1443,Gravel-Roy,105,53,11.84,2026-06-17,627.52
+1637,Denis Ltd,112,46,2.01,2026-06-17,92.46
+1840,Bolduc LLC,103,58,3.84,2026-06-17,222.72
+1841,Bégin PLC,97,49,2.91,2026-06-17,142.59
+1839,Jean LLC,90,46,2.90,2026-06-16,133.40
+1439,Trépanier-Lepage,97,66,4.23,2026-06-15,279.18
+1440,Larivière and Sons,83,64,3.76,2026-06-15,240.64
+1441,Massé-Séguin,83,59,3.65,2026-06-15,215.35
+1635,Gilbert Ltd,95,65,2.83,2026-06-15,183.95
+1636,Houde-Demers,90,40,3.24,2026-06-15,129.60
+1838,"Fortin, Tardif and Tessier",78,65,2.54,2026-06-13,165.10
+1634,Dubois Ltd,102,78,9.09,2026-06-08,709.02
+1633,Robert Group,87,42,13.10,2026-06-07,550.20
+1632,"Tanguay, Lapierre and Pouliot",105,63,7.79,2026-06-06,490.77
+1438,"Hébert, Vallée and Caron",88,43,2.67,2026-06-05,114.81
+1437,"Tanguay, Houle and Tremblay",103,60,2.84,2026-06-04,170.40
+1631,"Thibodeau, Harvey and Fillion",110,40,4.28,2026-06-04,171.20
+1837,Michaud Group,113,60,1.70,2026-06-04,102.00
+1835,Mercier Ltd,93,71,3.11,2026-06-02,220.81
+1836,Grégoire Ltd,106,49,6.59,2026-06-02,322.91
+1436,"Goulet, Fournier and Lemay",108,40,2.44,2026-06-01,97.60
+1435,Savard PLC,85,47,0.99,2026-05-31,46.53
+1834,Demers-Thibault,86,48,4.07,2026-05-31,195.36
+1629,Dubois LLC,78,54,2.74,2026-05-30,147.96
+1630,Gagné LLC,100,63,2.38,2026-05-30,149.94
+1434,"Mercier, Poirier and Larouche",105,56,10.94,2026-05-27,612.64
+1832,Paquin-Durand,85,65,0.70,2026-05-25,45.50
+1833,Laplante and Sons,86,67,4.55,2026-05-25,304.85
+1831,Sirois-Thériault,99,79,7.10,2026-05-24,560.90
+1830,"Racine, Savoie and Brisson",91,69,4.01,2026-05-23,276.69
+1433,Lapierre PLC,84,44,1.15,2026-05-22,50.60
+1628,Picard-Breton,92,63,5.84,2026-05-22,367.92
+1827,Hébert Inc,87,63,15.00,2026-05-21,945.00
+1828,"Michaud, Proulx and Gagnon",97,57,2.75,2026-05-21,156.75
+1829,"Potvin, Beaudry and Lalonde",108,59,2.59,2026-05-21,152.81
+1431,Béland-Gravel,109,47,5.31,2026-05-20,249.57
+1432,"Gauthier, Gagné and Cormier",104,63,3.35,2026-05-20,211.05
+1823,Chouinard-Dumas,113,54,2.09,2026-05-18,112.86
+1824,"Bédard, Duguay and Gendron",92,40,6.65,2026-05-18,266.00
+1825,Dupuis PLC,81,47,2.83,2026-05-18,133.01
+1826,Martineau Ltd,97,75,3.28,2026-05-18,246.00
+1627,"Brassard, Gendron and Gaudreault",95,63,3.37,2026-05-17,212.31
+1430,Larose-Charette,102,57,9.61,2026-05-16,547.77
+1626,"Lepage, Parent and Mercier",108,59,3.69,2026-05-16,217.71
+1822,Pelletier-Lamoureux,105,55,10.94,2026-05-16,601.70
+1429,"Thibault, Laplante and Thériault",78,47,3.14,2026-05-15,147.58
+1428,Lacasse-Gendron,84,79,1.43,2026-05-13,112.97
+1427,Lachance-Moreau,107,64,2.19,2026-05-12,140.16
+1425,Laliberté and Sons,107,79,2.23,2026-05-11,176.17
+1426,Lavallée-Trépanier,112,42,2.53,2026-05-11,106.26
+1821,"Thériault, Beauregard and Paquette",89,67,4.54,2026-05-10,304.18
+1625,"Delisle, Bolduc and Delisle",103,55,3.29,2026-05-09,180.95
+1820,Bernard-Vallée,110,58,3.84,2026-05-09,222.72
+1624,Duchesne LLC,78,54,3.89,2026-05-08,210.06
+1105,"Dubé, Marcoux and Tanguay",80,57,0.67,2026-05-07,38.19
+1305,Racine-Lemieux,111,49,1.24,2026-05-07,60.76
+1818,Tardif-Savoie,82,67,0.44,2026-05-07,29.48
+1819,Paradis-Forget,112,73,1.81,2026-05-07,132.13
+1104,Lavigne-Brunet,112,35,2.14,2026-05-06,74.90
+1304,Forget-Picard,106,14,6.70,2026-05-06,93.80
+1102,Guay-Cloutier,93,54,3.11,2026-05-05,167.94
+1103,Paré LLC,89,53,4.02,2026-05-05,213.06
+1302,Robert Ltd,101,26,6.23,2026-05-05,161.98
+1303,Émond-Patel,93,21,3.53,2026-05-05,74.13
+1424,"Auger, Bertrand and Houle",89,59,3.24,2026-05-05,191.16
+1101,Nguyen Group,80,68,0.45,2026-05-04,30.60
+1622,Lavigne-Gosselin,82,40,0.46,2026-05-04,18.40
+1623,"Couture, Coulombe and Savard",102,62,9.48,2026-05-04,587.76
+1817,Vallée-St-Pierre,93,80,3.17,2026-05-04,253.60
+1099,"Landry, Boudreau and Duchesne",113,16,1.94,2026-05-03,31.04
+1100,Massé-Germain,81,57,2.78,2026-05-03,158.46
+1300,"Nguyen, Lavallée and Vézina",84,31,1.57,2026-05-03,48.67
+1301,Daigle Ltd,109,76,4.40,2026-05-03,334.40
+1423,Vallée-Caron,103,50,3.59,2026-05-03,179.50
+1098,Piché LLC,106,37,6.04,2026-05-02,223.48
+1299,Soucy LLC,83,35,4.07,2026-05-02,142.45
+1422,"Bilodeau, Létourneau and Lemire",78,56,3.29,2026-05-02,184.24
+1621,"Maltais, Gilbert and St-Onge",80,50,0.59,2026-05-02,29.50
+1097,"Breton, Charron and Gravel",111,72,1.32,2026-05-01,95.04
+1298,Giguère PLC,93,37,3.05,2026-05-01,112.85
+1816,Bégin-Boisvert,111,47,1.57,2026-05-01,73.79
+1296,Dion-Mercier,114,50,2.51,2026-04-30,125.50
+1297,"Harvey, Pouliot and Lussier",113,63,1.94,2026-04-30,122.22
+1420,"Fillion, Gagnon and Émond",94,76,5.47,2026-04-30,415.72
+1421,Coulombe Ltd,110,40,2.74,2026-04-30,109.60
+1419,Picard-Prévost,92,44,5.57,2026-04-29,245.08
+1620,"Coulombe, Rousseau and Robert",98,49,3.63,2026-04-29,177.87
+1815,Lavoie Group,84,63,1.07,2026-04-29,67.41
+1095,"Duval, Lepage and St-Jean",91,80,4.12,2026-04-28,329.60
+1096,Bolduc-Robitaille,105,60,8.54,2026-04-28,512.40
+1294,"Gauthier, Boisvert and Fortier",86,34,4.23,2026-04-28,143.82
+1295,Lessard LLC,104,28,4.61,2026-04-28,129.08
+1094,"Larocque, Chartrand and Bélanger",92,72,6.11,2026-04-27,439.92
+1814,Plante-Thibodeau,89,78,3.24,2026-04-27,252.72
+1292,"Rioux, Lavallée and Létourneau",84,77,1.13,2026-04-26,87.01
+1293,Fortin Group,114,65,1.85,2026-04-26,120.25
+1418,Tanguay and Sons,80,50,0.61,2026-04-26,30.50
+1812,Beaulieu Inc,87,51,14.81,2026-04-26,755.31
+1813,Boutin LLC,94,48,3.74,2026-04-26,179.52
+1291,Massé and Sons,95,59,2.78,2026-04-25,164.02
+1619,Provencher-Prévost,104,78,3.17,2026-04-25,247.26
+1811,Lambert-Guay,96,77,2.84,2026-04-25,218.68
+1092,Dufresne-Moreau,106,24,5.93,2026-04-24,142.32
+1093,Lessard-Lachapelle,107,16,2.49,2026-04-24,39.84
+1289,Dufresne Group,107,10,3.39,2026-04-24,33.90
+1290,Fontaine PLC,101,31,4.71,2026-04-24,146.01
+1810,Paquette and Sons,97,77,3.12,2026-04-24,240.24
+1090,Savoie and Sons,81,66,3.46,2026-04-23,228.36
+1091,"Laflamme, Dubé and Dupuis",84,42,1.35,2026-04-23,56.70
+1288,"Bédard, Émond and Rioux",99,28,6.20,2026-04-23,173.60
+1809,"Chabot, Audet and Laflamme",95,69,2.83,2026-04-23,195.27
+1286,Caron-Allard,89,18,3.96,2026-04-22,71.28
+1287,Massé-Auger,89,64,4.15,2026-04-22,265.60
+1416,"Lapierre, Cyr and Lussier",79,52,2.09,2026-04-22,108.68
+1417,"Turcotte, Germain and Mathieu",104,70,4.67,2026-04-22,326.90
+1089,Plante Inc,112,65,2.20,2026-04-21,143.00
+1617,Lepage-Moreau,109,46,5.45,2026-04-21,250.70
+1618,"Asselin, Martineau and Beaudry",107,70,2.53,2026-04-21,177.10
+1807,Chabot-Guay,95,40,2.92,2026-04-21,116.80
+1808,"Lauzon, St-Onge and Dufresne",86,55,6.07,2026-04-21,333.85
+1088,Bergeron Ltd,82,62,0.41,2026-04-20,25.42
+1285,Bisson PLC,101,22,5.75,2026-04-20,126.50
+1806,"Landry, Gravel and Fournier",114,45,1.85,2026-04-20,83.25
+1087,Jacques LLC,108,73,2.44,2026-04-19,178.12
+1283,"Delisle, Michaud and Lavallée",80,45,0.55,2026-04-19,24.75
+1284,Vézina and Sons,109,56,5.24,2026-04-19,293.44
+1805,Lefebvre-Lussier,106,42,6.92,2026-04-19,290.64
+1086,Legault-Gagnon,86,42,4.23,2026-04-18,177.66
+1616,Lemieux-Dupuis,100,54,2.96,2026-04-18,159.84
+1085,"St-Pierre, Boisvert and Paré",87,68,10.82,2026-04-17,735.76
+1282,Breton-Rousseau,89,41,4.09,2026-04-17,167.69
+1415,Dubé-Thibodeau,85,51,0.82,2026-04-17,41.82
+1615,"Bérubé, Paquette and Drolet",109,61,3.91,2026-04-17,238.51
+1804,Gélinas LLC,91,59,3.51,2026-04-17,207.09
+1083,Paquette-Dubé,91,64,2.91,2026-04-16,186.24
+1084,Duguay-Drolet,99,40,5.39,2026-04-16,215.60
+1281,Lussier Group,97,52,4.02,2026-04-16,209.04
+1279,"Marcoux, Dion and Sirois",80,31,0.55,2026-04-15,17.05
+1280,St-Pierre Ltd,83,49,3.07,2026-04-15,150.43
+1413,Robert-Laflamme,93,68,3.77,2026-04-15,256.36
+1414,Beauchamp-Trudel,91,61,3.18,2026-04-15,193.98
+1614,Fournier Ltd,94,78,5.09,2026-04-15,397.02
+1082,"Laroche, Rioux and Asselin",78,46,2.59,2026-04-14,119.14
+1278,Forget-Lavallée,103,73,3.19,2026-04-13,232.87
+1411,Beaudry-Chouinard,86,57,6.31,2026-04-13,359.67
+1412,"Bédard, Boulanger and Dion",113,49,1.67,2026-04-13,81.83
+1613,"Renaud, Savoie and Arsenault",82,73,0.34,2026-04-13,24.82
+1803,"Prévost, Émond and Soucy",113,66,1.94,2026-04-13,128.04
+1080,"Thibodeau, Gélinas and Duguay",106,22,7.14,2026-04-12,157.08
+1081,"Trottier, Simard and Létourneau",83,11,2.75,2026-04-12,30.25
+1277,"Desjardins, Hébert and Nguyen",96,15,2.84,2026-04-12,42.60
+1409,"Bélisle, Noël and Robitaille",85,67,0.76,2026-04-12,50.92
+1410,"Blanchette, Bolduc and Pouliot",85,70,0.82,2026-04-12,57.40
+1612,"Gilbert, Lussier and Leclerc",104,56,3.77,2026-04-12,211.12
+1079,Audet-Lacroix,81,77,3.50,2026-04-11,269.50
+1276,Béland-Moreau,102,74,8.70,2026-04-10,643.80
+1408,Nguyen-Lessard,109,80,4.05,2026-04-10,324.00
+1802,"Blanchette, Larocque and Dionne",82,71,0.55,2026-04-10,39.05
+1078,Lavigne-Durand,96,14,2.69,2026-04-09,37.66
+1407,"Charest, Beauregard and Jean",105,61,9.14,2026-04-09,557.54
+1611,Labbé-Piché,90,48,3.71,2026-04-09,178.08
+1275,Charest and Sons,100,62,2.96,2026-04-08,183.52
+1274,Hamel PLC,82,24,0.50,2026-04-07,12.00
+1610,Rodrigue Group,99,44,4.58,2026-04-07,201.52
+1801,"Langlois, Legault and Asselin",103,51,3.74,2026-04-07,190.74
+1272,Savard-Archambault,106,32,5.50,2026-04-06,176.00
+1273,Pilon Group,109,51,4.96,2026-04-06,252.96
+1404,Maltais-Larose,87,46,14.05,2026-04-06,646.30
+1405,"Pépin, Bernard and Lavigne",100,62,2.47,2026-04-06,153.14
+1406,"Dumas, Massé and Fortin",82,46,0.55,2026-04-06,25.30
+1608,Godin-Houle,109,75,3.70,2026-04-06,277.50
+1609,"Fontaine, Provost and St-Jean",86,65,4.15,2026-04-06,269.75
+1800,Martel-Bérubé,101,63,4.39,2026-04-06,276.57
+1077,Gendron LLC,80,78,0.64,2026-04-05,49.92
+1270,Desrosiers and Sons,113,33,2.00,2026-04-05,66.00
+1271,Provencher-Asselin,89,43,4.22,2026-04-05,181.46
+1606,Rivard Group,107,58,3.00,2026-04-05,174.00
+1607,Laroche-Dubé,105,44,10.94,2026-04-05,481.36
+1076,Perreault-Lepage,82,38,0.48,2026-04-04,18.24
+1268,"Leclerc, Bisson and Houde",111,76,1.62,2026-04-04,123.12
+1269,"Caron, Rousseau and Lemieux",92,17,5.21,2026-04-04,88.57
+1403,Plourde-Roberge,103,42,2.89,2026-04-03,121.38
+1799,Plante-Dallaire,88,43,2.47,2026-04-03,106.21
+1604,"Gauthier, Morissette and Renaud",108,72,3.69,2026-04-02,265.68
+1605,Beaudoin and Sons,81,40,2.29,2026-04-02,91.60
+1075,"Jean, Perron and Lamoureux",102,15,9.61,2026-04-01,144.15
+1267,Bégin-Thibodeau,96,33,3.44,2026-04-01,113.52
+1402,Séguin PLC,92,67,5.03,2026-04-01,337.01
+1603,Lacroix PLC,88,48,3.15,2026-04-01,151.20
+1797,Godin-Jean,97,63,4.18,2026-04-01,263.34
+1798,Provost Inc,91,49,3.90,2026-04-01,191.10
+1265,St-Jean-Bisson,101,10,6.07,2026-03-31,60.70
+1266,Robitaille Inc,108,36,3.31,2026-03-31,119.16
+1601,Dumont PLC,100,69,2.74,2026-03-31,189.06
+1602,"Vézina, Chabot and Martel",100,41,2.65,2026-03-31,108.65
+1796,"Richer, Lachapelle and Dufour",113,49,2.15,2026-03-31,105.35
+1263,Gingras Inc,108,43,2.78,2026-03-30,119.54
+1264,"Dupont, Fortin and Vézina",113,52,2.03,2026-03-30,105.56
+1600,Plante Group,84,61,1.45,2026-03-30,88.45
+1073,Lebel Group,92,74,6.65,2026-03-29,492.10
+1074,Laroche Ltd,89,43,3.96,2026-03-29,170.28
+1401,Boivin Group,94,40,4.94,2026-03-29,197.60
+1795,"Leclerc, Piché and Lavallée",113,76,1.61,2026-03-29,122.36
+1071,Gervais PLC,96,67,2.64,2026-03-27,176.88
+1072,Béland-Champagne,95,63,2.47,2026-03-27,155.61
+1400,Houde and Sons,91,71,4.28,2026-03-27,303.88
+1599,Ouellet-Robitaille,91,78,4.12,2026-03-27,321.36
+1069,"Martin, Brisson and Duguay",105,76,10.94,2026-03-26,831.44
+1070,Larouche PLC,88,48,2.59,2026-03-26,124.32
+1261,Turcotte Group,99,59,5.48,2026-03-25,323.32
+1262,"Mercier, Lafontaine and Paré",99,77,5.75,2026-03-25,442.75
+1398,Bisson Ltd,107,71,2.62,2026-03-25,186.02
+1399,Girard-Forget,100,72,2.47,2026-03-25,177.84
+1598,"Harvey, Gervais and Fortin",84,76,1.29,2026-03-25,98.04
+1794,"Martel, Renaud and Champagne",97,80,3.33,2026-03-25,266.40
+1067,"Vincent, Mercier and Soucy",112,61,2.04,2026-03-24,124.44
+1068,Caron-Denis,84,16,1.00,2026-03-24,16.00
+1397,Audet-Plourde,112,44,2.04,2026-03-24,89.76
+1597,Gagné-Desbiens,78,46,3.74,2026-03-24,172.04
+1793,Laplante PLC,110,62,3.79,2026-03-24,234.98
+1260,Richard-Savard,97,57,3.91,2026-03-23,222.87
+1066,Bélanger LLC,93,41,3.11,2026-03-22,127.51
+1259,Lambert-Drouin,99,32,5.66,2026-03-22,181.12
+1395,Lapierre-Dupuis,88,49,2.19,2026-03-22,107.31
+1396,Brassard Inc,78,62,3.54,2026-03-22,219.48
+1596,"Martin, Thibodeau and Boudreau",100,48,2.65,2026-03-22,127.20
+1065,Martineau LLC,81,61,3.46,2026-03-21,211.06
+1257,"Jacques, Martin and St-Laurent",87,38,12.72,2026-03-21,483.36
+1258,"Desrochers, Jacques and Guay",82,67,0.44,2026-03-21,29.48
+1594,Deschênes-Godin,103,71,3.69,2026-03-21,261.99
+1595,"Picard, Thibodeau and Lemieux",84,75,1.13,2026-03-21,84.75
+1792,Gauthier PLC,109,43,3.84,2026-03-21,165.12
+1064,"Roberge, Larivière and Breton",113,17,2.33,2026-03-20,39.61
+1593,"Turcotte, Laplante and Bilodeau",87,44,14.05,2026-03-20,618.20
+1062,Proulx-Poirier,81,69,2.92,2026-03-19,201.48
+1063,Lavallée-Laliberté,103,60,2.89,2026-03-19,173.40
+1256,"Perron, Lapointe and Raymond",81,76,2.38,2026-03-19,180.88
+1394,Pilon-Turcotte,84,41,1.47,2026-03-19,60.27
+1790,Dionne-Leblanc,104,40,4.25,2026-03-19,170.00
+1791,Trottier Group,89,71,4.02,2026-03-19,285.42
+1255,Bergeron-Coulombe,95,26,3.14,2026-03-18,81.64
+1393,Gravel-Lemay,88,78,2.31,2026-03-18,180.18
+1592,Roy Ltd,97,80,4.13,2026-03-18,330.40
+1254,"Rodrigue, Michaud and Benoît",90,11,4.05,2026-03-17,44.55
+1789,"Pépin, Charest and Archambault",107,50,3.22,2026-03-17,161.00
+1392,Carrier-Poulin,84,57,1.35,2026-03-16,76.95
+1788,"Morin, Fortin and St-Onge",96,79,3.99,2026-03-16,315.21
+1061,Therrien-Tanguay,79,51,1.61,2026-03-15,82.11
+1253,Bilodeau Inc,107,15,3.35,2026-03-15,50.25
+1591,Drolet Inc,98,58,3.83,2026-03-15,222.14
+1059,"Gendron, Bouchard and Provost",114,53,2.27,2026-03-14,120.31
+1060,"Marcoux, Desrochers and Vincent",98,28,4.09,2026-03-14,114.52
+1251,Drouin LLC,101,65,6.31,2026-03-14,410.15
+1252,"Lavoie, Bernier and Desjardins",90,44,3.88,2026-03-14,170.72
+1391,"Daigle, Martel and Drolet",89,48,5.06,2026-03-14,242.88
+1590,Lemire-Bédard,98,68,4.87,2026-03-14,331.16
+1787,"Gravel, Potvin and Beaulieu",90,79,3.36,2026-03-14,265.44
+1250,Labbé-St-Laurent,92,15,4.67,2026-03-13,70.05
+1589,Turcotte Ltd,111,67,1.29,2026-03-13,86.43
+1785,"Gagnon, Hébert and Bédard",81,41,2.60,2026-03-13,106.60
+1786,Larouche LLC,96,40,2.84,2026-03-13,113.60
+1783,"Morin, Desrochers and Coulombe",103,56,3.49,2026-03-12,195.44
+1784,"Boudreau, Charette and Paquette",105,72,9.14,2026-03-12,658.08
+1058,"Lacasse, Dubé and Desrochers",92,58,5.66,2026-03-11,328.28
+1390,"Duguay, Roy and Houle",105,47,11.84,2026-03-11,556.48
+1588,Provencher-Ouellet,85,67,0.96,2026-03-11,64.32
+1056,"Létourneau, Desrosiers and Potvin",80,54,0.68,2026-03-10,36.72
+1057,"Desbiens, Turcotte and Cyr",101,63,4.95,2026-03-10,311.85
+1249,Noël Group,84,14,1.29,2026-03-10,18.06
+1782,"Soucy, Paré and Rodrigue",94,79,5.39,2026-03-10,425.81
+1054,Lauzon PLC,84,24,1.13,2026-03-09,27.12
+1055,Lapointe-Boivin,88,62,2.19,2026-03-09,135.78
+1248,"Prévost, Massé and Dion",93,75,4.31,2026-03-08,323.25
+1052,Provencher-Cormier,107,79,2.75,2026-03-06,217.25
+1053,"Trépanier, Poirier and Lamoureux",103,56,2.84,2026-03-06,159.04
+1246,"Gélinas, Lepage and Renaud",111,75,1.32,2026-03-06,99.00
+1247,Gravel and Sons,86,73,5.03,2026-03-06,367.19
+1051,"Leclerc, Lévesque and Lussier",79,41,2.12,2026-03-05,86.92
+1587,"Beaulieu, Guillemette and Martineau",105,48,11.99,2026-03-05,575.52
+1050,"Dumont, Bélanger and Nadeau",105,37,8.69,2026-03-04,321.53
+1389,Bernard-Thériault,92,50,7.01,2026-03-04,350.50
+1781,"Veilleux, Chabot and Nadeau",90,68,4.57,2026-03-04,310.76
+1245,Prévost-Lamontagne,95,12,3.05,2026-03-03,36.60
+1388,"Caron, Potvin and Blanchette",86,52,4.47,2026-03-03,232.44
+1243,Perreault-Bolduc,110,63,3.24,2026-03-02,204.12
+1244,Charest Group,108,63,2.87,2026-03-02,180.81
+1586,Dubé-Maltais,112,68,2.50,2026-03-02,170.00
+1049,"Beaudoin, Thibodeau and Ouellet",78,62,3.49,2026-03-01,216.38
+1241,Bertrand PLC,99,17,5.30,2026-03-01,90.10
+1242,"Lavoie, Desrosiers and Boudreau",96,33,2.89,2026-03-01,95.37
+1387,"Beauchamp, Legault and Trudel",99,52,6.29,2026-03-01,327.08
+1585,Veilleux and Sons,80,49,0.69,2026-03-01,33.81
+1240,"Gingras, Gagné and Larose",91,66,3.02,2026-02-28,199.32
+1385,Mercier-Dumont,111,59,1.34,2026-02-28,79.06
+1386,Gélinas-Fillion,109,53,5.24,2026-02-28,277.72
+1048,Desjardins-Fillion,95,63,3.23,2026-02-27,203.49
+1239,Thibodeau LLC,91,14,3.02,2026-02-27,42.28
+1584,"Beaudoin, Boisvert and Couture",93,70,3.53,2026-02-27,247.10
+1780,Dumont-Germain,94,72,4.87,2026-02-27,350.64
+1046,Turcotte and Sons,97,19,3.44,2026-02-26,65.36
+1047,"Poirier, Tardif and Gingras",97,75,3.07,2026-02-26,230.25
+1238,Laliberté-Lemay,87,78,11.20,2026-02-26,873.60
+1778,Turcotte Ltd,102,75,8.31,2026-02-26,623.25
+1779,Martineau-Dumas,100,55,2.60,2026-02-26,143.00
+1237,Fournier-Soucy,111,69,1.84,2026-02-25,126.96
+1384,"Doucet, Germain and Archambault",84,46,1.27,2026-02-25,58.42
+1583,Lalonde and Sons,111,47,1.24,2026-02-25,58.28
+1235,Rioux and Sons,93,33,3.29,2026-02-24,108.57
+1236,Bisson LLC,102,24,10.39,2026-02-24,249.36
+1383,"Deschênes, Picard and Doucet",81,65,2.51,2026-02-24,163.15
+1582,"Gagné, Pilon and Laflamme",78,41,3.94,2026-02-24,161.54
+1581,"Lamontagne, Guay and Lessard",110,46,3.90,2026-02-23,179.40
+1233,"Létourneau, Jean and Marchand",96,27,2.89,2026-02-22,78.03
+1234,"Auger, Godin and Lapierre",101,34,4.87,2026-02-22,165.58
+1382,Martin-Gagnon,83,60,4.02,2026-02-22,241.20
+1232,Beaulieu-Prévost,86,30,6.15,2026-02-21,184.50
+1381,"Dallaire, Morin and Robert",114,52,2.76,2026-02-21,143.52
+1579,"Béland, Jacques and Boivin",84,51,1.17,2026-02-21,59.67
+1580,"Giguère, Morissette and Auger",111,54,1.39,2026-02-21,75.06
+1777,"Leduc, Fontaine and Labbé",99,51,5.12,2026-02-21,261.12
+1045,"Gendron, Dumas and Chabot",106,45,7.03,2026-02-20,316.35
+1231,"Lachapelle, Dufresne and Trépanier",78,34,3.64,2026-02-20,123.76
+1578,"Dion, Paradis and Houde",86,48,5.11,2026-02-20,245.28
+1043,Trudel Inc,81,23,3.01,2026-02-19,69.23
+1044,Bélisle-Charbonneau,97,72,3.86,2026-02-19,277.92
+1229,Denis-Turcotte,89,64,4.22,2026-02-19,270.08
+1230,Gosselin-Labrecque,79,37,2.21,2026-02-19,81.77
+1379,Delisle LLC,87,55,9.87,2026-02-19,542.85
+1380,Dumont-Cloutier,111,75,1.59,2026-02-19,119.25
+1776,Fréchette-Dion,80,42,0.61,2026-02-19,25.62
+1378,"Brunet, Pouliot and Nguyen",112,76,2.01,2026-02-18,152.76
+1577,Laflamme-Sirois,86,61,5.11,2026-02-18,311.71
+1042,Maltais-Paquette,80,61,0.61,2026-02-17,37.21
+1227,St-Jean-Labelle,90,72,3.47,2026-02-17,249.84
+1228,Lussier-Sirois,109,69,5.10,2026-02-17,351.90
+1377,"Lapierre, Vallée and Lapointe",87,61,14.24,2026-02-17,868.64
+1775,"Richer, Gosselin and Goulet",101,60,5.59,2026-02-17,335.40
+1040,Allard Inc,84,33,1.31,2026-02-16,43.23
+1041,Delisle PLC,92,25,6.83,2026-02-16,170.75
+1225,Lapierre-Robert,89,41,4.74,2026-02-16,194.34
+1226,"Labelle, Denis and Labbé",93,54,4.61,2026-02-16,248.94
+1376,Boudreau and Sons,104,70,4.67,2026-02-16,326.90
+1774,"Roy, Duchesne and Blais",86,80,6.23,2026-02-16,498.40
+1039,"Perreault, St-Pierre and Langlois",106,23,6.04,2026-02-15,138.92
+1223,Larouche-Croteau,89,54,3.83,2026-02-15,206.82
+1224,Bergeron LLC,102,73,7.92,2026-02-15,578.16
+1222,Guillemette Group,81,39,2.33,2026-02-14,90.87
+1375,Leblanc-Tessier,81,66,3.37,2026-02-14,222.42
+1576,Gervais Inc,97,61,3.54,2026-02-14,215.94
+1773,"Lavallée, Langlois and Gervais",107,52,3.09,2026-02-14,160.68
+1772,"Lacasse, Denis and Gélinas",101,52,4.15,2026-02-13,215.80
+1038,"Robitaille, Turgeon and Racine",110,29,2.80,2026-02-12,81.20
+1220,Simard PLC,89,39,4.15,2026-02-12,161.85
+1221,"Patel, Guay and Dubé",81,56,2.38,2026-02-12,133.28
+1374,Fontaine-Paré,101,40,4.79,2026-02-12,191.60
+1770,St-Pierre and Sons,98,44,4.22,2026-02-12,185.68
+1771,"St-Jean, Racine and Chabot",88,45,2.43,2026-02-12,109.35
+1037,Brisson-Rodrigue,84,56,1.59,2026-02-11,89.04
+1218,Vachon PLC,93,72,3.59,2026-02-11,258.48
+1219,"Morin, Robitaille and Brassard",78,25,3.09,2026-02-11,77.25
+1035,Duchesne-Proulx,81,60,3.10,2026-02-10,186.00
+1036,Paré LLC,96,30,2.99,2026-02-10,89.70
+1217,Pouliot and Sons,99,36,5.12,2026-02-10,184.32
+1575,Pilon-Richard,101,51,5.99,2026-02-10,305.49
+1033,"Chouinard, Boily and Lacasse",93,15,4.01,2026-02-09,60.15
+1034,Paquette PLC,78,38,3.74,2026-02-09,142.12
+1215,Fontaine LLC,110,53,4.34,2026-02-09,230.02
+1216,"Lacasse, Tardif and Côté",106,62,8.68,2026-02-09,538.16
+1373,Chabot-Lemay,97,79,2.80,2026-02-09,221.20
+1573,Massé-Picard,95,64,2.69,2026-02-09,172.16
+1574,Fontaine Group,95,75,3.59,2026-02-09,269.25
+1769,Larocque PLC,92,68,6.29,2026-02-09,427.72
+1214,Labrecque LLC,95,16,2.47,2026-02-08,39.52
+1371,Lamontagne-Doucet,100,44,3.50,2026-02-08,154.00
+1372,"Labbé, Houle and Fontaine",106,75,8.57,2026-02-08,642.75
+1572,Fortin Group,90,70,3.42,2026-02-08,239.40
+1031,"Maltais, Desbiens and Paquette",78,50,2.54,2026-02-07,127.00
+1032,Gauthier-Harvey,99,78,5.21,2026-02-07,406.38
+1370,Lessard-Paré,78,76,3.69,2026-02-07,280.44
+1768,"Desjardins, Duval and Larivière",80,50,0.50,2026-02-07,25.00
+1030,Langlois Inc,82,37,0.42,2026-02-06,15.54
+1369,Bégin PLC,103,65,2.89,2026-02-06,187.85
+1213,"Labbé, Robitaille and Racine",91,68,2.96,2026-02-05,201.28
+1571,Gendron-Charest,90,45,4.28,2026-02-05,192.60
+1767,Leclerc-Boulanger,82,43,0.40,2026-02-05,17.20
+1211,"Bouchard, Auger and Lalonde",96,63,2.64,2026-02-04,166.32
+1212,Auger-Landry,96,13,3.09,2026-02-04,40.17
+1209,Perron Group,105,57,11.54,2026-02-03,657.78
+1210,Cloutier PLC,104,32,3.95,2026-02-03,126.40
+1766,Trudel-Laplante,86,79,5.83,2026-02-03,460.57
+1028,St-Jean and Sons,109,48,3.77,2026-02-02,180.96
+1029,Thériault Inc,86,32,5.99,2026-02-02,191.68
+1570,"Trépanier, Beaudoin and Plante",94,41,4.42,2026-02-02,181.22
+1027,Ouellet-Lamoureux,113,19,2.36,2026-02-01,44.84
+1569,"Boutin, Morissette and Goulet",78,77,3.49,2026-02-01,268.73
+1207,Soucy-Lévesque,97,74,4.02,2026-01-31,297.48
+1208,Lepage Ltd,113,74,2.39,2026-01-31,176.86
+1368,Beaudoin Ltd,107,46,2.45,2026-01-31,112.70
+1025,Cormier LLC,81,23,3.50,2026-01-30,80.50
+1026,Vachon LLC,79,58,1.91,2026-01-30,110.78
+1205,Croteau LLC,78,46,2.50,2026-01-30,115.00
+1206,"Maltais, Gaudreault and Potvin",111,44,1.99,2026-01-30,87.56
+1765,"Michaud, Lafontaine and Labrecque",93,63,4.37,2026-01-30,275.31
+1023,"Rodrigue, Croteau and Perreault",103,48,3.54,2026-01-29,169.92
+1024,"Hébert, Michaud and Houle",90,64,3.01,2026-01-29,192.64
+1203,St-Jean-Bertrand,97,14,3.60,2026-01-29,50.40
+1204,Vachon LLC,86,73,5.43,2026-01-29,396.39
+1367,Dupont and Sons,88,53,2.91,2026-01-29,154.23
+1567,Giroux Inc,81,42,2.24,2026-01-29,94.08
+1568,Perreault PLC,83,60,3.86,2026-01-29,231.60
+1764,"Dubois, Dallaire and Labbé",97,46,3.28,2026-01-29,150.88
+1201,Lessard-Roberge,87,49,11.01,2026-01-28,539.49
+1202,"Marcotte, Landry and Fortier",94,36,4.27,2026-01-28,153.72
+1366,Gauthier PLC,94,57,4.72,2026-01-28,269.04
+1021,Dupuis-Boulanger,78,30,3.14,2026-01-27,94.20
+1022,Brisson-Bertrand,114,28,2.76,2026-01-27,77.28
+1200,"Lacasse, Desjardins and St-Pierre",99,61,4.58,2026-01-27,279.38
+1365,Bernier LLC,79,66,2.30,2026-01-27,151.80
+1019,Charbonneau-Dumont,81,40,2.92,2026-01-26,116.80
+1020,Trépanier and Sons,85,30,0.72,2026-01-26,21.60
+1199,Bédard-Houde,81,35,2.33,2026-01-26,81.55
+1762,"Boulanger, Desrosiers and Lemay",109,68,4.68,2026-01-26,318.24
+1763,"Rousseau, Fillion and St-Laurent",103,67,3.54,2026-01-26,237.18
+1018,Poirier-Vézina,87,63,12.91,2026-01-25,813.33
+1197,Hamel Ltd,113,26,1.55,2026-01-25,40.30
+1198,"Langlois, Desjardins and Lessard",94,61,5.02,2026-01-25,306.22
+1761,"Renaud, Plourde and Gravel",84,51,1.01,2026-01-25,51.51
+1196,"Vézina, Dufresne and Piché",90,45,4.23,2026-01-24,190.35
+1760,Couture-Boutin,79,40,1.67,2026-01-24,66.80
+1194,"Beauchamp, Bilodeau and Robitaille",110,76,3.02,2026-01-23,229.52
+1195,"Chartrand, Bégin and Séguin",110,59,3.13,2026-01-23,184.67
+1016,Bérubé-Fontaine,90,47,4.57,2026-01-22,214.79
+1017,"Dupuis, Blouin and Létourneau",95,23,3.10,2026-01-22,71.30
+1192,Delisle Group,95,39,2.96,2026-01-22,115.44
+1193,Roberge LLC,101,15,4.31,2026-01-22,64.65
+1759,Lauzon PLC,104,63,3.71,2026-01-22,233.73
+1015,Lavigne-Côté,86,59,4.00,2026-01-21,236.00
+1191,"Coulombe, Rivard and Savoie",105,22,11.24,2026-01-21,247.28
+1758,Tremblay-Trudel,109,69,4.75,2026-01-21,327.75
+1014,"Chartrand, Savard and Desrosiers",113,46,1.82,2026-01-19,83.72
+1566,Renaud Group,92,55,5.30,2026-01-19,291.50
+1757,"Proulx, Gosselin and Bédard",86,66,5.83,2026-01-19,384.78
+1190,Pouliot-Chouinard,78,38,3.64,2026-01-18,138.32
+1012,Gilbert-Croteau,93,51,4.19,2026-01-17,213.69
+1013,Soucy-Lamontagne,93,44,3.11,2026-01-17,136.84
+1189,Dion-Lauzon,83,16,3.33,2026-01-17,53.28
+1364,"Rioux, Marcoux and Fréchette",106,45,7.69,2026-01-17,346.05
+1756,Laplante Inc,107,73,2.49,2026-01-17,181.77
+1010,Morin LLC,80,18,0.54,2026-01-15,9.72
+1011,Croteau-Boily,81,17,2.60,2026-01-15,44.20
+1363,Lachapelle LLC,86,73,4.87,2026-01-15,355.51
+1008,"Gauthier, Mercier and Dubé",97,76,4.07,2026-01-14,309.32
+1009,Perron Group,90,64,3.65,2026-01-14,233.60
+1362,Archambault-Chouinard,90,41,3.82,2026-01-14,156.62
+1565,"Croteau, Bernard and St-Laurent",88,52,2.27,2026-01-14,118.04
+1006,Leduc-Denis,97,46,3.17,2026-01-13,145.82
+1007,"Côté, Vallée and Lemire",93,20,4.13,2026-01-13,82.60
+1564,Gagnon LLC,91,52,3.51,2026-01-13,182.52
+1755,Dupont-Martin,80,50,0.69,2026-01-13,34.50
+1005,Bélisle-Piché,85,78,0.79,2026-01-12,61.62
+1004,Boulanger Ltd,105,72,10.64,2026-01-11,766.08
+1188,"Renaud, Michaud and Brassard",86,13,4.87,2026-01-11,63.31
+1563,Dufour PLC,113,79,1.82,2026-01-11,143.78
+1187,Paré-Martel,87,24,11.01,2026-01-10,264.24
+1561,"Potvin, Bernard and Paquin",107,53,2.87,2026-01-10,152.11
+1562,Leblanc LLC,91,79,3.95,2026-01-10,312.05
+1754,Coulombe and Sons,106,66,7.80,2026-01-10,514.80
+1002,Gauthier LLC,101,48,4.39,2026-01-09,210.72
+1003,Cyr-Lalonde,95,36,3.46,2026-01-09,124.56
+1186,Gauthier LLC,86,79,6.23,2026-01-09,492.17
+1560,Ferland PLC,114,49,2.27,2026-01-09,111.23
+1751,"Trudel, Simard and Turcotte",105,56,9.59,2026-01-09,537.04
+1752,Lacroix-Archambault,114,45,1.99,2026-01-09,89.55
+1753,"Vaillancourt, Martineau and St-Pierre",92,80,7.10,2026-01-09,568.00
+1000,Prévost-Smith,104,63,3.05,2026-01-08,192.15
+1001,"Giroux, Richer and Bédard",82,49,0.42,2026-01-08,20.58
+1559,Fortier-Blouin,102,64,8.57,2026-01-08,548.48
+1750,Deschênes-Boudreau,92,75,4.94,2026-01-08,370.50
+999,Bernier LLC,87,14,11.39,2026-01-07,159.46
+1361,Dubois-Harvey,92,45,6.65,2026-01-07,299.25
+1749,Trottier-Caron,83,61,3.23,2026-01-07,197.03
+998,"Villeneuve, Germain and Vachon",85,56,1.00,2026-01-06,56.00
+1184,"Rivard, Simard and Noël",111,16,1.34,2026-01-06,21.44
+1185,Audet-Racine,99,31,7.01,2026-01-06,217.31
+1360,Harvey PLC,89,54,3.89,2026-01-06,210.06
+1748,Lévesque Ltd,108,63,2.63,2026-01-06,165.69
+997,Marchand-Parent,114,38,1.85,2026-01-05,70.30
+1747,Demers-Savard,93,50,4.37,2026-01-05,218.50
+996,Richard PLC,96,77,2.64,2026-01-04,203.28
+1182,Gilbert Inc,107,29,2.49,2026-01-04,72.21
+1183,Duchesne Ltd,99,16,7.01,2026-01-04,112.16
+1359,Plante-Richer,104,41,4.49,2026-01-04,184.09
+1558,"Cloutier, Vincent and Carrier",97,59,3.39,2026-01-04,200.01
+994,Marcotte Group,82,20,0.43,2026-01-03,8.60
+995,"Carrier, Boivin and Goulet",83,56,4.02,2026-01-03,225.12
+992,Breton-Lafontaine,111,71,1.74,2026-01-02,123.54
+993,Larouche-Bérubé,103,70,2.79,2026-01-02,195.30
+1180,Noël Group,78,49,3.24,2026-01-02,158.76
+1181,"Deschênes, Pouliot and Fortin",89,18,4.48,2026-01-02,80.64
+1556,Boudreau-Paquin,105,62,8.84,2026-01-02,548.08
+1557,Larivière-Goulet,92,49,4.58,2026-01-02,224.42
+991,Trudel-Côté,96,24,3.14,2026-01-01,75.36
+1358,Charron Inc,97,76,4.02,2026-01-01,305.52
+1555,Séguin Ltd,97,62,3.49,2026-01-01,216.38
+990,"Chabot, Laliberté and Soucy",112,70,2.11,2025-12-31,147.70
+1178,Potvin Inc,110,31,4.28,2025-12-31,132.68
+1179,Ouellet-Desbiens,106,23,7.58,2025-12-31,174.34
+1746,Provencher Inc,101,58,4.39,2025-12-31,254.62
+1356,"Boucher, Nadeau and Smith",85,57,0.81,2025-12-30,46.17
+1357,Renaud-Moreau,96,63,2.79,2025-12-30,175.77
+1553,Cyr Group,112,64,2.01,2025-12-30,128.64
+1554,Paré Inc,94,66,4.72,2025-12-30,311.52
+989,Demers-Fortier,110,38,3.40,2025-12-29,129.20
+1744,Bernard Inc,98,42,4.61,2025-12-29,193.62
+1745,Charron and Sons,95,67,2.42,2025-12-29,162.14
+988,Arsenault-Béland,98,58,4.74,2025-12-28,274.92
+1176,Beaudoin Group,87,37,10.06,2025-12-28,372.22
+1177,Lacasse-Archambault,81,68,3.32,2025-12-28,225.76
+1355,Turgeon-Fontaine,106,76,7.80,2025-12-28,592.80
+1743,"Lavigne, Laroche and Fortin",90,74,3.18,2025-12-28,235.32
+986,Boily-Arsenault,87,32,12.53,2025-12-27,400.96
+987,"Trépanier, Laplante and Cloutier",108,42,2.78,2025-12-27,116.76
+1354,Trudel-Asselin,114,40,2.06,2025-12-27,82.40
+1551,Archambault and Sons,80,73,0.62,2025-12-27,45.26
+1552,Raymond PLC,98,44,4.28,2025-12-27,188.32
+1742,"Coulombe, Cormier and Roy",91,74,3.79,2025-12-27,280.46
+1174,Lacroix LLC,91,20,3.13,2025-12-26,62.60
+1175,"Boucher, Boily and Lepage",111,34,1.74,2025-12-26,59.16
+985,"Parent, Robitaille and Lauzon",107,20,3.35,2025-12-25,67.00
+1173,Moreau PLC,107,43,2.96,2025-12-25,127.28
+1353,Vallée and Sons,107,55,2.66,2025-12-25,146.30
+1550,"Bertrand, St-Onge and Dallaire",112,47,2.07,2025-12-25,97.29
+1172,Boudreau-Lepage,82,18,0.55,2025-12-24,9.90
+1351,Pilon-Lussier,111,52,1.67,2025-12-24,86.84
+1352,Jacques LLC,110,77,3.79,2025-12-24,291.83
+984,Daigle-Lachance,108,41,2.92,2025-12-23,119.72
+1350,Gosselin-Larocque,81,68,2.51,2025-12-23,170.68
+1548,Beaulieu Ltd,79,72,2.21,2025-12-23,159.12
+1549,Savoie Ltd,81,47,3.37,2025-12-23,158.39
+1740,Thériault-Brassard,87,66,13.86,2025-12-23,914.76
+1741,Lacroix Inc,91,67,2.85,2025-12-23,190.95
+983,Duval PLC,113,70,2.24,2025-12-22,156.80
+1170,"Leduc, Giguère and Labrecque",79,63,2.09,2025-12-22,131.67
+1171,Benoît-Duval,92,75,6.29,2025-12-22,471.75
+981,Charron LLC,91,53,3.51,2025-12-21,186.03
+982,Laroche Group,98,68,5.06,2025-12-21,344.08
+1169,"Larivière, Gilbert and Bisson",105,19,11.24,2025-12-21,213.56
+1547,Boudreau-Tanguay,83,73,3.07,2025-12-21,224.11
+1739,Turgeon-Auger,84,44,1.21,2025-12-21,53.24
+1738,Breton PLC,114,60,2.55,2025-12-20,153.00
+1168,Laliberté-Trépanier,86,38,4.55,2025-12-19,172.90
+1349,Larocque-Dupuis,96,52,3.34,2025-12-19,173.68
+980,Charron-Croteau,79,12,1.55,2025-12-18,18.60
+1167,"Fortin, Lambert and Émond",114,24,2.48,2025-12-18,59.52
+1737,Breton-Girard,107,56,3.00,2025-12-18,168.00
+1166,Brisson Ltd,94,43,5.69,2025-12-17,244.67
+978,Carrier LLC,104,28,4.73,2025-12-16,132.44
+979,Gravel Inc,103,76,2.69,2025-12-16,204.44
+1165,"Fréchette, Dubois and Lessard",87,45,11.58,2025-12-16,521.10
+1164,Guillemette-Houde,113,16,2.18,2025-12-15,34.88
+1348,Guillemette-Mercier,112,45,2.04,2025-12-15,91.80
+1736,Bernier Inc,92,51,5.30,2025-12-15,270.30
+977,"Poulin, Tessier and Duchesne",111,66,1.89,2025-12-14,124.74
+1163,Leblanc-Lapointe,92,68,4.67,2025-12-14,317.56
+1546,Ferland-Thibodeau,110,77,2.91,2025-12-14,224.07
+1733,Goulet-Boucher,107,42,2.23,2025-12-14,93.66
+1734,Renaud-Robert,99,46,4.94,2025-12-14,227.24
+1735,Beaulieu-Gauthier,104,70,3.23,2025-12-14,226.10
+975,Larose LLC,81,25,2.42,2025-12-13,60.50
+976,Savard PLC,98,58,4.93,2025-12-13,285.94
+1347,Dupuis-Ferland,97,56,3.33,2025-12-13,186.48
+1545,"Carrier, Auger and Trottier",81,61,2.87,2025-12-13,175.07
+974,Labonté-Lacroix,114,11,2.48,2025-12-12,27.28
+1162,Landry Group,84,57,1.55,2025-12-12,88.35
+1544,Drolet-Ouellet,113,55,2.36,2025-12-12,129.80
+972,"Lamontagne, Piché and Drouin",109,35,4.05,2025-12-11,141.75
+973,Ouellet and Sons,78,21,2.74,2025-12-11,57.54
+1346,"Brisson, Lauzon and Nguyen",86,54,5.35,2025-12-11,288.90
+1543,"Smith, Larocque and Moreau",110,79,3.18,2025-12-11,251.22
+1345,Boudreau and Sons,100,63,3.59,2025-12-10,226.17
+970,"Marcoux, Brisson and Laplante",97,27,3.65,2025-12-09,98.55
+971,Croteau-Martin,79,44,1.88,2025-12-09,82.72
+1344,Vachon PLC,102,71,8.83,2025-12-09,626.93
+1542,Patel Ltd,78,71,2.99,2025-12-09,212.29
+969,Pilon-Beaudoin,107,55,3.05,2025-12-08,167.75
+1161,Chartrand Group,112,63,2.20,2025-12-08,138.60
+1541,Plourde LLC,107,69,3.05,2025-12-08,210.45
+1732,Michaud-Blanchette,93,67,3.29,2025-12-08,220.43
+968,"Lachapelle, Gendron and Bertrand",97,22,3.54,2025-12-07,77.88
+1160,"Desjardins, St-Laurent and Poirier",101,57,5.83,2025-12-07,332.31
+966,"Vaillancourt, Drolet and Perron",107,46,2.53,2025-12-06,116.38
+967,"Breton, Fontaine and Pilon",97,54,2.64,2025-12-06,142.56
+1158,Tremblay Ltd,79,15,1.64,2025-12-06,24.60
+1159,Desrosiers-Poulin,98,17,3.96,2025-12-06,67.32
+1539,Patel Ltd,108,56,3.21,2025-12-06,179.76
+1540,Dallaire Inc,96,49,3.24,2025-12-06,158.76
+965,Charbonneau Ltd,114,22,2.76,2025-12-05,60.72
+1537,Vaillancourt Group,99,73,4.67,2025-12-05,340.91
+1538,"Tessier, Legault and Dufresne",94,41,4.64,2025-12-05,190.24
+1731,Lamontagne Inc,101,76,4.31,2025-12-05,327.56
+963,Carrier-Pouliot,94,25,3.97,2025-12-04,99.25
+964,Boivin LLC,99,18,6.65,2025-12-04,119.70
+1343,Demers-Dupuis,90,65,4.57,2025-12-04,297.05
+1342,Croteau and Sons,83,55,3.86,2025-12-03,212.30
+962,"Giroux, Desbiens and Gravel",81,32,2.38,2025-12-02,76.16
+1156,Cormier-Savard,111,30,1.84,2025-12-02,55.20
+1157,Caron Ltd,112,45,2.63,2025-12-02,118.35
+1341,Richard Ltd,78,75,3.89,2025-12-02,291.75
+1155,"Boivin, St-Onge and Lemieux",95,36,2.60,2025-12-01,93.60
+1536,Harvey Group,94,54,5.24,2025-12-01,282.96
+960,Turcotte LLC,92,70,7.01,2025-11-30,490.70
+961,Fillion-Duguay,92,18,5.21,2025-11-30,93.78
+1154,"Girard, Desrochers and Lavallée",84,50,1.27,2025-11-30,63.50
+1340,Laflamme and Sons,80,61,0.54,2025-11-30,32.94
+1535,Patel LLC,105,57,9.14,2025-11-30,520.98
+959,Dupont-Brassard,112,55,2.30,2025-11-29,126.50
+1339,Dubois and Sons,84,73,1.29,2025-11-29,94.17
+958,"Picard, Grenier and Gaudreault",84,65,1.43,2025-11-28,92.95
+1729,"Sirois, Carrier and Beaudoin",96,59,2.79,2025-11-28,164.61
+1730,Laflamme and Sons,85,52,1.08,2025-11-28,56.16
+957,"Blanchette, Plante and Séguin",112,60,1.78,2025-11-27,106.80
+1153,Godin Inc,99,39,4.58,2025-11-27,178.62
+956,"Germain, Labelle and Labbé",83,74,4.18,2025-11-26,309.32
+1152,Blouin-Girard,105,55,11.99,2025-11-26,659.45
+1337,Fortier Inc,105,57,8.39,2025-11-26,478.23
+1338,Delisle-St-Pierre,113,57,2.33,2025-11-26,132.81
+954,Duval Inc,84,79,1.47,2025-11-25,116.13
+955,Daigle Group,86,21,4.63,2025-11-25,97.23
+1534,Parent Group,78,71,2.74,2025-11-25,194.54
+952,Beauregard and Sons,107,45,2.83,2025-11-24,127.35
+953,Blais Group,106,62,7.36,2025-11-24,456.32
+1335,Lussier and Sons,97,71,3.07,2025-11-24,217.97
+1336,Giroux-Archambault,104,70,3.05,2025-11-24,213.50
+1533,"Proulx, Audet and Desbiens",85,67,1.04,2025-11-24,69.68
+951,Sirois PLC,105,59,9.44,2025-11-23,556.96
+1150,"Labelle, Blanchette and Racine",80,49,0.59,2025-11-23,28.91
+1151,Cyr PLC,79,50,2.12,2025-11-23,106.00
+1531,"Paré, Laflamme and Giguère",98,51,4.67,2025-11-23,238.17
+1532,Chouinard and Sons,101,73,5.35,2025-11-23,390.55
+949,Provost LLC,98,59,3.37,2025-11-22,198.83
+950,Noël-Prévost,90,23,3.01,2025-11-22,69.23
+1334,Richer Group,88,70,3.15,2025-11-22,220.50
+947,Paré-Tremblay,79,31,2.12,2025-11-21,65.72
+948,Robert Inc,101,52,4.87,2025-11-21,253.24
+1149,Lauzon-Leclerc,114,77,2.34,2025-11-21,180.18
+1333,"Provost, Houle and Bégin",91,45,4.23,2025-11-21,190.35
+1530,"Lapierre, Labonté and Roy",101,47,5.35,2025-11-21,251.45
+1728,"Leclerc, Charron and Desrosiers",88,44,2.55,2025-11-21,112.20
+945,Charron-Lacroix,109,56,4.40,2025-11-20,246.40
+946,"Dubois, Lavoie and Chouinard",84,20,1.21,2025-11-20,24.20
+1147,Charette-Moreau,83,33,3.81,2025-11-20,125.73
+1148,St-Pierre Group,80,20,0.69,2025-11-20,13.80
+1726,Morissette Ltd,111,79,1.97,2025-11-20,155.63
+1727,"Martin, Nadeau and Vincent",86,57,4.63,2025-11-20,263.91
+1725,Paré Inc,93,71,4.01,2025-11-19,284.71
+1145,Landry-Gagnon,94,43,3.74,2025-11-18,160.82
+1146,Breton-Allard,86,36,4.47,2025-11-18,160.92
+1724,Bergeron LLC,79,68,2.21,2025-11-18,150.28
+1529,"Turcotte, Gervais and Lepage",87,62,11.96,2025-11-17,741.52
+944,Fortier-Leblanc,103,24,3.29,2025-11-16,78.96
+1144,Laliberté-Gosselin,85,24,0.72,2025-11-16,17.28
+1332,Charron Inc,92,59,5.39,2025-11-16,318.01
+1527,Nguyen-Delisle,95,56,2.47,2025-11-16,138.32
+1528,Godin-Lepage,94,50,5.09,2025-11-16,254.50
+1723,"Lauzon, Bouchard and Gosselin",79,69,1.52,2025-11-16,104.88
+943,"Gauthier, Boily and Dufresne",100,40,2.78,2025-11-15,111.20
+1142,"Fontaine, Robert and Lavallée",101,17,4.15,2025-11-15,70.55
+1143,Patel-Duval,97,13,3.33,2025-11-15,43.29
+1722,"Perron, Sirois and Parent",92,67,4.58,2025-11-15,306.86
+1141,"Dumas, Lévesque and Laroche",79,36,1.94,2025-11-14,69.84
+1331,Rousseau-Duguay,87,58,13.29,2025-11-14,770.82
+1721,"Lessard, Lachance and Tanguay",99,80,5.48,2025-11-14,438.40
+942,Goulet-Lussier,78,61,2.79,2025-11-13,170.19
+1140,Larouche-Lapierre,101,48,5.35,2025-11-13,256.80
+1330,"Lavigne, Gaudreault and Lefebvre",109,42,5.45,2025-11-13,228.90
+1720,Lafontaine Group,107,74,3.22,2025-11-13,238.28
+941,"Dumont, Marcoux and Allard",90,34,3.47,2025-11-12,117.98
+1526,St-Jean Inc,96,73,3.59,2025-11-12,262.07
+1719,Tremblay-Chouinard,89,76,4.54,2025-11-12,345.04
+939,Roy LLC,90,47,4.00,2025-11-11,188.00
+940,Moreau Ltd,107,59,3.13,2025-11-11,184.67
+938,"Roy, Gaudreault and Tremblay",110,75,3.68,2025-11-10,276.00
+1329,Gravel-Cloutier,114,63,2.27,2025-11-10,143.01
+1525,Létourneau and Sons,110,45,4.23,2025-11-10,190.35
+1328,Vallée-Nguyen,96,65,3.04,2025-11-09,197.60
+1718,Desrochers Ltd,92,46,4.85,2025-11-09,223.10
+937,"Fournier, Dubé and Veilleux",113,69,1.64,2025-11-08,113.16
+1139,"Perreault, Duchesne and Langlois",112,68,1.91,2025-11-08,129.88
+1327,"Veilleux, Caron and Boulanger",86,66,5.03,2025-11-08,331.98
+1523,"Lamontagne, Durand and Boily",104,46,4.13,2025-11-08,189.98
+1524,"Dallaire, Lacasse and Tardif",79,60,2.27,2025-11-08,136.20
+1717,"Roy, Thériault and Bérubé",83,52,3.60,2025-11-08,187.20
+935,"Parent, Labrecque and Nadeau",80,65,0.61,2025-11-07,39.65
+936,Giguère and Sons,109,41,5.10,2025-11-07,209.10
+1137,"Jean, Dionne and Duchesne",98,69,3.57,2025-11-07,246.33
+1138,"Dufresne, Legault and Rivard",111,63,1.29,2025-11-07,81.27
+1325,Boisvert-Savoie,101,45,4.63,2025-11-07,208.35
+1326,Desrosiers-Plante,99,46,6.74,2025-11-07,310.04
+933,Gauthier PLC,95,42,2.96,2025-11-06,124.32
+934,Trudel Inc,97,16,3.23,2025-11-06,51.68
+1136,Boisvert-Trudel,109,50,4.12,2025-11-06,206.00
+1324,Vachon-Piché,86,40,4.79,2025-11-06,191.60
+1716,Breton-Picard,90,51,3.59,2025-11-06,183.09
+1135,"Laplante, Lebel and Forget",94,43,5.84,2025-11-05,251.12
+1323,Bouchard-Noël,109,41,5.31,2025-11-05,217.71
+932,Noël-Sirois,96,64,2.89,2025-11-04,184.96
+1133,Daigle PLC,89,66,3.76,2025-11-04,248.16
+1134,"Gravel, Fréchette and Caron",92,32,7.19,2025-11-04,230.08
+1715,Duchesne-Tardif,83,59,3.60,2025-11-04,212.40
+930,Laroche-Bernard,98,80,4.87,2025-11-03,389.60
+931,Bouchard-Boucher,95,65,2.24,2025-11-03,145.60
+1131,Lavallée-Bélanger,79,31,2.03,2025-11-03,62.93
+1132,Bilodeau Group,84,45,1.13,2025-11-03,50.85
+1321,"Robert, Robitaille and Thibodeau",112,58,2.07,2025-11-03,120.06
+1322,Boulanger and Sons,84,73,1.53,2025-11-03,111.69
+1522,Robert-Drouin,80,61,0.68,2025-11-03,41.48
+1521,Paquette Inc,95,72,3.32,2025-11-02,239.04
+1130,Beauregard Inc,87,52,11.58,2025-11-01,602.16
+1319,Pouliot Inc,94,67,4.72,2025-11-01,316.24
+1320,Caron LLC,79,65,2.03,2025-11-01,131.95
+1714,Boudreau-Girard,92,62,5.21,2025-11-01,323.02
+928,"Desrochers, Girard and Marcoux",84,36,1.27,2025-10-31,45.72
+929,Labonté-Thibodeau,114,30,2.06,2025-10-31,61.80
+1128,"Godin, Piché and Lamontagne",87,50,11.58,2025-10-31,579.00
+1129,Breton LLC,80,75,0.70,2025-10-31,52.50
+1520,"Blouin, Boucher and Turgeon",112,64,1.64,2025-10-31,104.96
+1713,Renaud-Cormier,113,55,2.30,2025-10-31,126.50
+926,"Rivard, Houle and Beauregard",106,51,6.37,2025-10-30,324.87
+927,Duguay-Fillion,95,15,2.42,2025-10-30,36.30
+1126,Lamontagne Inc,99,58,4.67,2025-10-30,270.86
+1127,Fortier Ltd,80,13,0.47,2025-10-30,6.11
+1318,Bélanger-Provost,95,77,3.55,2025-10-30,273.35
+925,Champagne-Lavigne,105,20,9.59,2025-10-29,191.80
+1125,"Breton, Paradis and Lapointe",82,69,0.40,2025-10-29,27.60
+1518,Bérubé and Sons,113,80,2.12,2025-10-29,169.60
+1519,"Létourneau, Thibodeau and Mercier",93,77,3.89,2025-10-29,299.53
+1123,"Couture, Bernier and Forget",112,26,2.34,2025-10-28,60.84
+1124,"Tanguay, Paré and Roy",96,24,2.54,2025-10-28,60.96
+1316,Vallée Group,108,44,3.16,2025-10-28,139.04
+1317,Leclerc-Giguère,84,57,1.01,2025-10-28,57.57
+1517,Ménard Group,99,66,6.47,2025-10-28,427.02
+924,Smith LLC,86,16,4.95,2025-10-27,79.20
+1121,Harvey-Lacroix,113,79,1.67,2025-10-27,131.93
+1122,Landry-Asselin,90,70,4.40,2025-10-27,308.00
+1314,"Poirier, Savard and Fortin",91,52,2.85,2025-10-27,148.20
+1315,Beaudoin and Sons,84,66,1.23,2025-10-27,81.18
+1516,"Leduc, Parent and Paquette",113,61,1.73,2025-10-27,105.53
+922,"Girard, Coulombe and Rodrigue",105,61,9.14,2025-10-26,557.54
+923,"Lebel, Veilleux and Arsenault",100,59,2.42,2025-10-26,142.78
+1120,Lauzon-Benoît,103,50,3.09,2025-10-26,154.50
+1118,Paquette Inc,78,25,3.99,2025-10-25,99.75
+1119,"Bédard, Boucher and Germain",81,24,3.23,2025-10-25,77.52
+1515,"Maltais, Drolet and Pelletier",93,48,4.07,2025-10-25,195.36
+920,Picard-Larocque,104,12,3.77,2025-10-24,45.24
+921,Martineau and Sons,78,72,3.59,2025-10-24,258.48
+1117,Dumas-Fournier,114,30,2.44,2025-10-24,73.20
+1514,"Gélinas, Croteau and Gilbert",96,64,2.69,2025-10-24,172.16
+1712,Boudreau-Lepage,92,56,6.74,2025-10-23,377.44
+919,Rioux-Dallaire,102,55,8.70,2025-10-22,478.50
+1313,Gingras and Sons,90,76,4.40,2025-10-22,334.40
+1312,Dubé Inc,112,47,2.53,2025-10-21,118.91
+917,Labbé PLC,95,57,2.96,2025-10-20,168.72
+918,"Laroche, Rodrigue and Langlois",110,42,3.90,2025-10-20,163.80
+1115,"Gervais, Archambault and Marchand",105,28,9.44,2025-10-19,264.32
+1116,Dufour-Boudreau,99,78,5.39,2025-10-19,420.42
+1311,Asselin-Fortin,102,67,7.27,2025-10-19,487.09
+1513,Larouche-Beauchamp,113,76,1.70,2025-10-19,129.20
+1711,"Champagne, Croteau and Potvin",100,73,2.83,2025-10-19,206.59
+916,Drouin-Gauthier,80,28,0.47,2025-10-18,13.16
+1114,"Desbiens, Girard and Cyr",82,26,0.39,2025-10-18,10.14
+1710,Tanguay-Forget,104,42,3.41,2025-10-18,143.22
+1113,"Larouche, Bilodeau and Lemay",82,13,0.46,2025-10-17,5.98
+1512,"Boisvert, Plourde and Richer",113,68,2.06,2025-10-16,140.08
+914,"Legault, Picard and Lapierre",108,50,3.59,2025-10-15,179.50
+915,Prévost-Larouche,82,72,0.55,2025-10-15,39.60
+1111,"Pilon, Laroche and Tessier",81,50,3.19,2025-10-15,159.50
+1112,"Mercier, Laplante and Vachon",87,80,13.86,2025-10-15,1108.80
+1511,Rousseau-Couture,89,63,4.74,2025-10-15,298.62
+912,Piché-Savard,109,32,5.52,2025-10-14,176.64
+913,Pelletier LLC,93,58,3.11,2025-10-14,180.38
+1310,"Asselin, Lessard and Marchand",99,40,6.56,2025-10-14,262.40
+1509,Larocque and Sons,90,55,4.40,2025-10-14,242.00
+1510,Prévost-Beauchamp,96,68,3.74,2025-10-14,254.32
+1709,Asselin Group,112,75,2.01,2025-10-14,150.75
+910,"Chabot, Rousseau and Champagne",105,44,9.29,2025-10-13,408.76
+911,Grégoire Group,82,28,0.37,2025-10-13,10.36
+1110,"Bérubé, Renaud and Lavigne",89,50,3.83,2025-10-13,191.50
+908,Therrien-Leclerc,103,42,3.89,2025-10-12,163.38
+909,Boivin and Sons,81,31,2.47,2025-10-12,76.57
+1108,Rioux Group,110,35,3.51,2025-10-12,122.85
+1109,Houde-Pilon,92,32,5.30,2025-10-12,169.60
+906,Audet Inc,102,80,8.18,2025-10-11,654.40
+907,Raymond-Massé,84,64,1.53,2025-10-11,97.92
+1309,Renaud and Sons,101,62,6.39,2025-10-11,396.18
+1507,Charest-Caron,83,60,2.96,2025-10-11,177.60
+1508,Drolet-Beauchamp,82,68,0.46,2025-10-11,31.28
+1307,Dumont-Marcoux,91,61,4.01,2025-10-10,244.61
+1308,"Hébert, Tremblay and Gauthier",97,79,4.13,2025-10-10,326.27
+1706,Lapointe-Gingras,79,51,2.21,2025-10-10,112.71
+1707,"Côté, Paquin and Brassard",92,54,6.11,2025-10-10,329.94
+1708,Plourde-Larocque,107,58,2.62,2025-10-10,151.96
+1106,Leclerc and Sons,103,32,3.49,2025-10-09,111.68
+1107,Chouinard-Girard,91,20,4.01,2025-10-09,80.20
+1306,"Leclerc, Jacques and Lessard",92,40,5.93,2025-10-09,237.20
+1506,"Simard, Paré and Bergeron",95,47,2.74,2025-10-09,128.78

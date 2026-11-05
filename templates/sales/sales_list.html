@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+Ventes
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/sales_style.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container-fluid sales-page">
+
+    <div
+        class="d-flex justify-content-between
+               align-items-center mb-4"
+    >
+
+        <div>
+
+            <h2>Ventes</h2>
+
+            <p class="text-muted mb-0">
+                Historique des ventes.
+            </p>
+
+        </div>
+
+
+        <a
+            href="{% url 'sales:sale_create' %}"
+            class="btn btn-primary"
+        >
+            + Nouvelle vente
+        </a>
+
+    </div>
+
+
+    <div class="card">
+
+        <div class="card-body">
+
+            <div class="table-responsive">
+
+                <table class="table table-hover">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Date</th>
+
+                            <th>Produit</th>
+
+                            <th>Quantité</th>
+
+                            <th>Prix unitaire</th>
+
+                            <th>Total</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        {% for sale in sales %}
+
+                            <tr>
+
+                                <td>
+                                    {{ sale.date }}
+                                </td>
+
+                                <td>
+                                    {{ sale.product.name }}
+                                </td>
+
+                                <td>
+                                    {{ sale.quantity }}
+                                </td>
+
+                                <td>
+                                    {{ sale.unit_price|floatformat:2 }} $
+                                </td>
+
+                                <td>
+                                    {{ sale.total|floatformat:2 }} $
+                                </td>
+
+                            </tr>
+
+                        {% empty %}
+
+                            <tr>
+
+                                <td
+                                    colspan="5"
+                                    class="text-center text-muted"
+                                >
+                                    Aucune vente enregistrée.
+                                </td>
+
+                            </tr>
+
+                        {% endfor %}
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

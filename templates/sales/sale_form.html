@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+Nouvelle vente
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/sales_style.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid sales-page">
+
+    <div class="mb-4">
+
+        <h2>Nouvelle vente</h2>
+
+        <p class="text-muted">
+            Enregistrer une nouvelle vente.
+        </p>
+
+    </div>
+
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-7 col-xl-6">
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <h5 class="mb-0">
+                        Informations de la vente
+                    </h5>
+
+                </div>
+
+
+                <div class="card-body">
+
+                    <form method="POST">
+
+                        {% csrf_token %}
+
+
+                        <div class="mb-3">
+
+                            <label
+                                for="{{ form.product.id_for_label }}"
+                                class="form-label"
+                            >
+                                Produit
+                            </label>
+
+                            {{ form.product }}
+
+                            {{ form.product.errors }}
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Prix de vente
+                            </label>
+
+                            <div
+                                id="unit-price"
+                                class="form-control bg-light"
+                            >
+                                0.00 $
+                            </div>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Stock disponible
+                            </label>
+
+                            <div
+                                id="available-stock"
+                                class="form-control bg-light"
+                            >
+                                -
+                            </div>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label
+                                for="{{ form.quantity.id_for_label }}"
+                                class="form-label"
+                            >
+                                Quantité
+                            </label>
+
+                            {{ form.quantity }}
+
+                            {{ form.quantity.errors }}
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label
+                                for="{{ form.date.id_for_label }}"
+                                class="form-label"
+                            >
+                                Date
+                            </label>
+
+                            {{ form.date }}
+
+                            {{ form.date.errors }}
+
+                        </div>
+
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+                                Total
+                            </label>
+
+                            <div
+                                id="sale-total"
+                                class="fs-4 fw-bold"
+                            >
+                                0.00 $
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            Enregistrer la vente
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+{{ product_data|json_script:"product-data" }}
+
+<script
+    src="{% static 'js/sales.js' %}"
+></script>
+
+{% endblock %}
