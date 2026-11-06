@@ -14,7 +14,7 @@ The interface primarily uses French labels. This version records one product per
 - **Dashboard:** view revenue, purchase amounts, quantities, sales count, active products, low-stock and out-of-stock counts, and inventory value at purchase price. Includes six-month charts, five top-selling products, and recent transactions.
 - **Demo data:** generate a realistic catalog and transactions in chronological order.
 - **CSV exports:** export categories, products, purchases, and sales for analysis.
-- **Analytics:** extract and clean exported data with Pandas, with an exploratory notebook included.
+- **Analytics:** extract and clean CSV data, build a dimensional model, and load five analytical tables into SQL Server. An exploratory notebook is also included.
 
 ## Technology
 
@@ -25,7 +25,8 @@ The interface primarily uses French labels. This version records one product per
 | Frontend | Django templates, HTML, CSS, JavaScript |
 | Charts | Chart.js 4.5.0, loaded from a CDN |
 | Demo data | Faker with the `fr_CA` locale |
-| Optional analytics | Pandas, Jupyter Notebook |
+| Configuration | python-dotenv and a root `.env` file |
+| Analytics | Pandas, SQLAlchemy, pyodbc, SQL Server; notebook tooling |
 
 ## Getting started
 
@@ -65,16 +66,38 @@ python -m pip install -r requirements.txt
 
 **Dependency note:** the committed requirements file is UTF-16 encoded and pins `Django==6.1.1`, `Faker==40.41.0`, and supporting packages. These pins are recorded here as repository values; a successful installation has not been verified. If pip reports that a pinned version is unavailable, review and correct the dependency pins using releases available for your Python version before continuing. If an editor or package tool has trouble reading the file, save it as UTF-8. The repository does not declare a Python version.
 
-### 4. Initialize the database
+### 4. Configure the Django secret
+
+Create a `.env` file in the project root, alongside `manage.py`:
+
+```dotenv
+Django_key=replace_with_your_generated_secret
+```
+
+Generate a secret and copy the output into `Django_key`:
+
+```bash
+python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
+```
+
+The variable name is case-sensitive. `config/settings.py` loads this file with `python-dotenv` and reads `Django_key` as the Django secret key. Keep `.env` private; it is already ignored by Git.
+
+**Additional dependency:** the current requirements file does not include `python-dotenv`, even though settings import it. Install it before running Django commands:
+
+```bash
+python -m pip install python-dotenv
+```
+
+### 5. Initialize the database
 
 ```bash
 python manage.py migrate
 python manage.py createsuperuser
 ```
 
-SQLite creates `db.sqlite3` locally. No separate database server or `.env` file is required by the current settings.
+SQLite creates `db.sqlite3` locally. No separate database server is required for the Django application. SQL Server is used only by the optional analytics pipeline.
 
-### 5. Start the application
+### 6. Start the application
 
 ```bash
 python manage.py runserver
@@ -141,19 +164,70 @@ The command writes UTF-8-with-BOM CSV files into `exports/`, replacing existing 
 
 Totals use `quantity × unit_price`. Run the export again to refresh the analytics inputs after changing store data.
 
-## Optional analytics workflow
+## Analytics pipeline and SQL Server
 
+The operational application uses SQLite. The analytics pipeline reads CSV snapshots from `exports/`, cleans them, builds dimensions and facts, and loads them into a separate SQL Server database.
+
+### 1. Prepare the analytics dependencies
+
+Pandas and notebook-related packages are included in the current requirements file. The loader also imports SQLAlchemy and uses pyodbc; neither is currently listed there:
+
+```bash
+python -m pip install sqlalchemy pyodbc
+```
+
+Install the Microsoft ODBC driver for SQL Server on the machine running the pipeline. It is a system dependency, separate from the Python packages. The driver name in `.env` must match an installed driver.
+
+### 2. Configure the SQL Server connection
+
+Create the target SQL Server database before loading, then add these settings to the same root `.env` file:
+
+```dotenv
+# Required by the Django application
+Django_key=replace_with_your_generated_secret
+
+# Required only for the analytics load; replace these example values
+DB_SERVER=localhost\SQLEXPRESS
+DB_NAME=StoreAnalytics
+DB_DRIVER=ODBC Driver 18 for SQL Server
+```
+
+The loader uses Windows integrated authentication (`Trusted_Connection=yes`), encryption, and `TrustServerCertificate=yes`. It does not currently read a SQL username or password. The executing account needs access to the target database and permission to create, drop, and insert into tables. Other authentication methods require changes to `analysis/load.py`.
+
+### 3. Export and run the pipeline
+
+Run these commands from the project root:
 
 ```bash
 python manage.py export_data
-python -m analysis.extract
-python -m analysis.transform
+python -m analysis.main
 ```
 
-- `analysis.extract` reads the four CSV files and reports row counts, columns, missing values, duplicate rows, and duplicate IDs.
-- `analysis.transform` cleans data in memory, recalculates purchase costs and sales revenue, and prints before/after row counts. Validation differs between datasets; it does not write cleaned CSV files.
-- `analysis/Store_analysis.ipynb` contains notebook-based analysis. Install Jupyter separately if needed.
-- `analysis/load.py` contains a fully commented SQL Server staging-loader draft. It does not execute a load and needs implementation and integration work before use. SQL Server is not required to run the Django application.
+`analysis.main` runs the complete workflow:
+
+1. `extract_data()` reads categories, products, purchases, and sales CSV files and prints row counts.
+2. `clean_data()` cleans category and product identifiers and names, removes invalid relationships and duplicate records, validates transaction quantities, prices, dates, and supplier names, and recalculates transaction amounts.
+3. `build_star_schema()` creates three dimensions and two fact tables.
+4. The pipeline prints table counts and previews.
+5. `load_data()` writes all five tables to SQL Server’s `dbo` schema using a SQLAlchemy transaction.
+
+**Replacement behavior:** each load uses `if_exists="replace"`. It drops and recreates the five destination tables rather than appending rows or performing incremental updates. Use a dedicated analytics database; existing data and table-level constraints or indexes on these tables can be lost. The loader does not explicitly define SQL primary keys, foreign keys, or financial column types.
+
+The pipeline reads the last CSV export, not the live SQLite database. Export again after store transactions change. Running `python -m analysis.extract` or `python -m analysis.transform` alone does not run the workflow: these modules currently define functions without command-line entry points.
+
+### Analytical tables
+
+| Table | Grain / purpose | Columns |
+| --- | --- | --- |
+| `dim_date` | One row per date present in purchases or sales | `date_id`, `date`, `year`, `quarter`, `month`, `day` |
+| `dim_product` | One row per cleaned product; includes category name | `product_id`, `sku`, `product_name`, `category_name` |
+| `dim_supplier` | One row per distinct cleaned purchase supplier name | `supplier_id`, `supplier_name` |
+| `fact_sales` | One row per cleaned sale record | `sale_id`, `date_id`, `product_id`, `quantity`, `unit_price`, `revenue` |
+| `fact_purchases` | One row per cleaned purchase record | `purchase_id`, `date_id`, `product_id`, `supplier_id`, `quantity`, `unit_price`, `total_cost` |
+
+Both fact tables share the date and product dimensions. Purchases also reference the supplier dimension. `date_id` uses `YYYYMMDD`; supplier IDs are regenerated from sorted supplier names on every run and may change when suppliers change. The date dimension contains transaction dates only, rather than a continuous calendar.
+
+`analysis/Store_analysis.ipynb` is included for notebook-based exploration. SQL Server is optional for running the store application but required for the full `analysis.main` command.
 
 ## Project structure
 
@@ -166,7 +240,7 @@ Store_Management_V1/
 ├── dashboard/              # KPI aggregation and dashboard view
 ├── templates/              # Shared layout and application templates
 ├── static/                 # CSS and JavaScript
-├── analysis/               # CSV extraction, transformation, notebook, loader draft
+├── analysis/               # ETL pipeline, dimensional model, SQL loader, notebook
 ├── exports/                # CSV datasets and export output
 ├── manage.py
 ├── requirements.txt
@@ -204,13 +278,13 @@ This version provides a foundation for store operations and analytics. Potential
 - Staff authentication and role-based permissions for operational pages.
 - Stock reconciliation for edited and deleted transactions.
 - A working demo-data cleanup command and automated inventory tests.
-- A completed SQL Server analytics loader and reproducible dependency setup.
+- Incremental analytics loads, explicit SQL keys and types, and a reproducible dependency setup.
 
 These extensions are not implemented in the current repository.
 
 ## Deployment considerations
 
-The committed settings are for local development: `DEBUG=True`, a hard-coded development secret key, and an empty `ALLOWED_HOSTS` list. Before deployment, configure a private production secret, disable debug mode, set allowed hosts, configure static-file serving, and protect operational routes with appropriate authentication and permissions. The current store views do not enforce login.
+The committed settings are for local development: `DEBUG=True`, an environment-based secret key, and an empty `ALLOWED_HOSTS` list. Before deployment, configure a private production secret, disable debug mode, set allowed hosts, configure static-file serving, and protect operational routes with appropriate authentication and permissions. The current store views do not enforce login.
 
 ## Contributing
 
