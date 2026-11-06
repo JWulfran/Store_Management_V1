@@ -13,33 +13,10 @@ def extract_data():
     purchases_df = pd.read_csv(export_dir / "purchases.csv")
     sales_df = pd.read_csv(export_dir / "sales.csv")
 
+      # Display the number of extracted rows
+    print("Categories:", len(categories_df))
+    print("Products:", len(products_df))
+    print("Purchases:", len(purchases_df))
+    print("Sales:", len(sales_df))
+
     return categories_df, products_df, purchases_df, sales_df
-
-
-if __name__ == "__main__":
-
-    categories_df, products_df, purchases_df, sales_df = extract_data()
-
-    datasets = {
-        "Categories": categories_df,
-        "Products": products_df,
-        "Purchases": purchases_df,
-        "Sales": sales_df
-    }
-
-    for name, df in datasets.items():
-
-        print(f"\n{'=' * 50}")
-        print(f"Original Dataset: {name}")
-        print(f"{'=' * 50}")
-
-        print(df.head())
-
-        print(f"\nNumber of Rows: {len(df)}")
-        print(f"Number of Columns: {len(df.columns)}")
-
-        print(f"Missing Values: {df.isnull().sum().sum()}")
-        print(f"Duplicate Rows: {df.duplicated().sum()}")
-
-        if "id" in df.columns:
-            print(f"Duplicate IDs: {df['id'].dropna().duplicated().sum()}")

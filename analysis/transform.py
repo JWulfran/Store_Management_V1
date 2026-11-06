@@ -1,263 +1,267 @@
 import pandas as pd
-from .extract import extract_data
 
-def transform_data(categories_df, products_df, purchases_df, sales_df):
-    # Copies pour conserver les données d'origine
-    T_Categories_df = categories_df.copy()
-    T_Products_df = products_df.copy()
-    T_Purchases_df = purchases_df.copy()
-    T_sales_df = sales_df.copy()
+
+def clean_data(categories_df, products_df, purchases_df, sales_df):
+    # Copies preserve the original DataFrames
+    categories = categories_df.copy()
+    products = products_df.copy()
+    purchases = purchases_df.copy()
+    sales = sales_df.copy()
 
     # =====================================
-    # TRANSFORM CATEGORIES
+    # 1. CATEGORIES
     # =====================================
 
-    # Convert IDs into numbers
-    T_Categories_df["id"] = pd.to_numeric(
-        T_Categories_df["id"],
-        errors="coerce"
-    )
+    categories["id"] = pd.to_numeric(categories["id"], errors="coerce")
+    categories["name"] = (categories["name"].astype("string").str.strip())
+    categories = categories.dropna(subset=["id", "name"])
+    categories = categories[(categories["id"] > 0) & (categories["id"] % 1 == 0) & (categories["name"] != "")].copy()
+    categories["id"] = categories["id"].astype("int64")
+    categories = categories.drop_duplicates(subset=["id"])
 
-    # Remove spaces around names
-    T_Categories_df["name"] = T_Categories_df["name"].astype("string").str.strip()
+    # =====================================
+    # 2. PRODUCTS
+    # =====================================
 
-    # Remove missing IDs and names
-    T_Categories_df = T_Categories_df.dropna(subset=["id", "name"])
+    for column in ["sku", "name"]:
+        products[column] = (products[column].astype("string").str.strip())
 
-    # Keep positive, whole-number IDs and non-empty names
-    T_Categories_df = T_Categories_df[
-        (T_Categories_df["id"] > 0) &
-        (T_Categories_df["id"] % 1 == 0) &
-        (T_Categories_df["name"] != "")
+    products["id"] = pd.to_numeric(products["id"], errors="coerce")
+    products["category_id"] = pd.to_numeric(products["category_id"], errors="coerce")
+    products = products.dropna(subset=["id", "category_id", "sku", "name"])
+    products = products[
+        (products["id"] > 0) & (products["id"] % 1 == 0) & (products["category_id"] > 0) & (products["category_id"] % 1 == 0)
+      & (products["sku"] != "") & (products["name"] != "")
     ].copy()
 
-    # Store IDs as integers
-    T_Categories_df["id"] = T_Categories_df["id"].astype("int64")
+    # Keep products belonging to a valid category
+    products = products[products["category_id"].isin(categories["id"])].copy()
 
-    # Keep the first occurrence of each ID
-    T_Categories_df = T_Categories_df.drop_duplicates(subset=["id"])
+    for column in ["id", "category_id"]:
+        products[column] = products[column].astype("int64")
 
-    # =====================================
-    # TRANSFORM PRODUCTS
-    # =====================================
-
-    # Clean text columns
-    T_Products_df["sku"] = T_Products_df["sku"].astype("string").str.strip()
-    T_Products_df["name"] = T_Products_df["name"].astype("string").str.strip()
-
-    # Convert numeric columns
-    numeric_columns = [
-        "id",
-        "category_id",
-        "purchase_price",
-        "selling_price",
-        "stock"
-    ]
-
-    for column in numeric_columns:
-        T_Products_df[column] = pd.to_numeric(
-            T_Products_df[column],
-            errors="coerce"
-        )
-
-    # Convert active status into Boolean values
-    T_Products_df["is_active"] = (
-        T_Products_df["is_active"]
-        .astype("string")
-        .str.strip()
-        .str.lower()
-        .map({
-            "true": True,
-            "false": False
-        })
-    )
-
-    # Remove missing or unrecognized values
-    T_Products_df = T_Products_df.dropna(
-        subset=[
-            "id",
-            "sku",
-            "name",
-            "category_id",
-            "purchase_price",
-            "selling_price",
-            "stock",
-            "is_active"
-        ]
-    )
-
-    # Keep rows that meet the rules
-    T_Products_df = T_Products_df[
-        (T_Products_df["id"] > 0) &
-        (T_Products_df["id"] % 1 == 0) &
-        (T_Products_df["category_id"] > 0) &
-        (T_Products_df["category_id"] % 1 == 0) &
-        (T_Products_df["sku"] != "") &
-        (T_Products_df["name"] != "") &
-        (T_Products_df["purchase_price"] > 0) &
-        (T_Products_df["selling_price"] > 0) &
-        (T_Products_df["stock"] >= 0) &
-        (T_Products_df["stock"] % 1 == 0)
-    ].copy()
-
-    # Keep only products referencing a cleaned category
-    T_Products_df = T_Products_df[
-        T_Products_df["category_id"].isin(T_Categories_df["id"])
-    ].copy()
-
-    # Convert whole-number columns into integers
-    for column in ["id", "category_id", "stock"]:
-        T_Products_df[column] = T_Products_df[column].astype("int64")
-
-    T_Products_df["is_active"] = T_Products_df["is_active"].astype(bool)
-
-    # Remove duplicate IDs and SKUs
-    T_Products_df = T_Products_df.drop_duplicates(subset=["id"])
-    T_Products_df = T_Products_df.drop_duplicates(subset=["sku"])
+    products = products.drop_duplicates(subset=["id"])
+    products = products.drop_duplicates(subset=["sku"])
 
     # =====================================
-    # TRANSFORM PURCHASES
+    # 3. PURCHASES AND SALES
     # =====================================
 
-    # Clean supplier names
-    T_Purchases_df["supplier"] = (
-        T_Purchases_df["supplier"]
-        .astype("string")
-        .str.strip()
-    )
-
-    # Convert numeric columns
-    for column in ["id", "product_id", "quantity", "unit_price"]:
-        T_Purchases_df[column] = pd.to_numeric(
-            T_Purchases_df[column],
-            errors="coerce"
-        )
-
-    # Convert dates
-    T_Purchases_df["date"] = pd.to_datetime(
-        T_Purchases_df["date"],
-        format="%Y-%m-%d",
-        errors="coerce"
-    )
-
-    # Remove missing or invalid values
-    T_Purchases_df = T_Purchases_df.dropna(
-        subset=[
-            "id",
-            "supplier",
-            "product_id",
-            "quantity",
-            "unit_price",
-            "date"
-        ]
-    )
-
-    # Keep positive, whole-number IDs and quantities
-    T_Purchases_df = T_Purchases_df[
-        (T_Purchases_df["id"] > 0) &
-        (T_Purchases_df["id"] % 1 == 0) &
-        (T_Purchases_df["product_id"] > 0) &
-        (T_Purchases_df["product_id"] % 1 == 0) &
-        (T_Purchases_df["quantity"] > 0) &
-        (T_Purchases_df["quantity"] % 1 == 0) &
-        (T_Purchases_df["unit_price"] > 0) &
-        (T_Purchases_df["supplier"] != "")
-    ].copy()
-
-    # Keep only purchases referencing a cleaned product
-    T_Purchases_df = T_Purchases_df[
-        T_Purchases_df["product_id"].isin(T_Products_df["id"])
-    ].copy()
-
-    # Convert whole-number columns into integers
-    for column in ["id", "product_id", "quantity"]:
-        T_Purchases_df[column] = T_Purchases_df[column].astype("int64")
-
-    # Remove duplicate purchase IDs
-    T_Purchases_df = T_Purchases_df.drop_duplicates(subset=["id"])
-
-    # Calculate the total cost
-    T_Purchases_df["total_cost"] = (
-        T_Purchases_df["quantity"] * T_Purchases_df["unit_price"]
-    ).round(2)
-
-    # Format dates for CSV export
-    T_Purchases_df["date"] = T_Purchases_df["date"].dt.strftime("%Y-%m-%d")
-
-
-    # =====================================
-    # TRANSFORM SALES
-    # =====================================
-
-    # Remove rows with missing essential values
-    T_sales_df = sales_df.dropna(subset=["id","product_id", "quantity", "unit_price", "date"])
-
-    # Remove duplicate IDs
-    T_sales_df = T_sales_df.drop_duplicates(subset=["id"], keep="first")
-
-    # Convert numeric columns
-    T_sales_df["quantity"] = pd.to_numeric(T_sales_df["quantity"], errors="coerce")
-    T_sales_df["unit_price"] = pd.to_numeric(T_sales_df["unit_price"], errors="coerce")
-        # Remove invalid numeric values
-    T_sales_df = T_sales_df.dropna(subset=["quantity", "unit_price"])
-
-    # Keep only positive quantities and prices
-    T_sales_df = T_sales_df[(T_sales_df["quantity"] > 0) & (T_sales_df["unit_price"] > 0)].copy()
-
-    # Convert dates
-    T_sales_df["date"] = pd.to_datetime(T_sales_df["date"], errors="coerce")
-        # Remove invalid dates
-    T_sales_df = T_sales_df.dropna(subset=["date"])
-
-    # Recalculate the revenue
-    T_sales_df["revenue"] = (T_sales_df["quantity"] * T_sales_df["unit_price"]).round(2)
-
-    # Format dates 
-    T_sales_df["date"] = T_sales_df["date"].dt.strftime("%Y-%m-%d") 
-
-    return (
-        T_Categories_df,
-        T_Products_df,
-        T_Purchases_df,
-        T_sales_df,
-    )
-
-
-def main():
-    from .extract import extract_data
-
-    categories_df, products_df, purchases_df, sales_df = extract_data()
-
-    return transform_data(
-        categories_df,
-        products_df,
-        purchases_df,
-        sales_df,
-    )
-
-
-if __name__ == "__main__":
-    main()
-
-    categories_df, products_df, purchases_df, sales_df = extract_data()
-
-    T_Categories_df, T_Products_df, T_Purchases_df, T_sales_df = transform_data(categories_df, products_df, purchases_df, sales_df)
-
-    T_datasets = {
-    "Transormed Category" : [len(T_Categories_df), len(categories_df)], 
-    "Transormed Product" : [len(T_Products_df), len(products_df)],
-    "Transormed Purchase" : [len(T_Purchases_df), len(purchases_df)],
-    "Transormed Sales" : [len(T_sales_df), len(sales_df)]
+    # These tables share most cleaning rules
+    transactions = {
+        "purchases": purchases,
+        "sales": sales,
     }
 
-    # T_datasets = {
-    # "Transormed Category" : [T_Categories_df, categories_df], 
-    # "Transormed Product" : [T_Products_df, products_df],
-    # "Transormed Purchase" : [T_Purchases_df, purchases_df],
-    # "Transormed Sales" : [T_sales_df, sales_df]
-    # }
+    for name, frame in transactions.items():
+        original_count = len(frame)
 
-    # print(T_datasets.items())
-    for name,[len_1, len_2] in T_datasets.items():
-            print(f"\n{name} — original rows: {len_2}")
-            print(f"{name} — cleaned rows : {len_1}")
+        # Convert numeric values
+        for column in ["id", "product_id", "quantity", "unit_price"]:
+            frame[column] = pd.to_numeric(frame[column], errors="coerce")
+
+        # Convert dates
+        frame["date"] = pd.to_datetime(frame["date"], format="%Y-%m-%d", errors="coerce",)
+
+        frame = frame.dropna(subset=["id", "product_id", "quantity", "unit_price", "date"])
+
+        # IDs and quantities must be positive whole numbers
+        for column in ["id", "product_id", "quantity"]:
+            frame = frame[
+                        (frame[column] > 0) & (frame[column] % 1 == 0)
+                    ].copy()
+
+            frame[column] = frame[column].astype("int64")
+
+        # Keep finite, positive prices with at most two decimals
+        frame = frame[
+            (frame["unit_price"] > 0) & (frame["unit_price"] < float("inf")) & ((frame["unit_price"] * 100) - (frame["unit_price"] * 100).round()).abs().lt(0.000001)
+        ].copy()
+
+        frame["unit_price"] = frame["unit_price"].round(2)
+
+        # Keep transactions referencing a valid product
+        frame = frame[
+            frame["product_id"].isin(products["id"])
+        ].copy()
+
+        # Supplier is required only for purchases
+        if name == "purchases":
+            frame["supplier"] = (
+                frame["supplier"].astype("string").str.strip()
+            )
+
+            frame = frame.dropna(subset=["supplier"])
+            frame = frame[frame["supplier"] != ""].copy()
+
+        frame = frame.drop_duplicates(subset=["id"])
+
+        # Recalculate the transaction amount
+        total_column = "total_cost" if name == "purchases" else "revenue"
+
+        frame[total_column] = (
+            frame["quantity"] * frame["unit_price"]
+        ).round(2)
+
+        transactions[name] = frame
+
+        print(
+            f"{name}: {original_count} original rows, "
+            f"{len(frame)} clean rows"
+        )
+
+    print("Clean categories:", len(categories))
+    print("Clean products:", len(products))
+
+    return (
+        categories,
+        products,
+        transactions["purchases"],
+        transactions["sales"],
+    )
+
+def build_star_schema(categories, products, purchases, sales):
+    # =====================================
+    # 1. DATE DIMENSION
+    # =====================================
+
+    # Collect dates from both transaction tables
+    dates = pd.concat(
+        [sales["date"], purchases["date"]],
+        ignore_index=True,
+    )
+
+    dim_date = dates.to_frame(name="date")
+
+    dim_date = (
+        dim_date.drop_duplicates()
+        .sort_values("date")
+        .reset_index(drop=True)
+    )
+
+    # Example: 2026-09-03 becomes 20260903
+    dim_date["date_id"] = (
+        dim_date["date"].dt.strftime("%Y%m%d").astype("int64")
+    )
+
+    dim_date["year"] = dim_date["date"].dt.year
+    dim_date["quarter"] = dim_date["date"].dt.quarter
+    dim_date["month"] = dim_date["date"].dt.month
+    dim_date["day"] = dim_date["date"].dt.day
+
+    dim_date = dim_date[
+        ["date_id", "date", "year", "quarter", "month", "day"]
+    ]
+
+    # =====================================
+    # 2. PRODUCT DIMENSION
+    # =====================================
+
+    category_names = categories[["id", "name"]].rename(
+        columns={
+            "id": "category_id",
+            "name": "category_name",
+        }
+    )
+
+    dim_product = products[
+        ["id", "sku", "name", "category_id"]
+    ].copy()
+
+    # Add the category name to each product
+    dim_product = dim_product.merge(
+        category_names,
+        on="category_id",
+        how="left",
+        validate="many_to_one",
+    )
+
+    dim_product = dim_product.rename(
+        columns={
+            "id": "product_id",
+            "name": "product_name",
+        }
+    )
+
+    dim_product = dim_product[
+        ["product_id", "sku", "product_name", "category_name"]
+    ]
+
+    # =====================================
+    # 3. SUPPLIER DIMENSION
+    # =====================================
+
+    dim_supplier = (
+        purchases[["supplier"]]
+        .drop_duplicates()
+        .sort_values("supplier")
+        .reset_index(drop=True)
+    )
+
+    dim_supplier["supplier_id"] = dim_supplier.index + 1
+
+    dim_supplier = dim_supplier.rename(
+        columns={"supplier": "supplier_name"}
+    )
+
+    dim_supplier = dim_supplier[
+        ["supplier_id", "supplier_name"]
+    ]
+
+    # =====================================
+    # 4. SALES FACT TABLE
+    # =====================================
+
+    fact_sales = sales[
+        ["id", "date", "product_id", "quantity", "unit_price", "revenue"]
+    ].copy()
+
+    fact_sales = fact_sales.merge(
+        dim_date[["date", "date_id"]],
+        on="date",
+        how="left",
+        validate="many_to_one",
+    )
+
+    fact_sales = fact_sales.rename(columns={"id": "sale_id"})
+
+    fact_sales = fact_sales[
+        ["sale_id", "date_id", "product_id", "quantity", "unit_price", "revenue"]
+    ]
+
+    # =====================================
+    # 5. PURCHASES FACT TABLE
+    # =====================================
+
+    fact_purchases = purchases[
+        ["id", "date", "product_id", "supplier",
+         "quantity", "unit_price", "total_cost"]
+    ].copy()
+
+    fact_purchases = fact_purchases.merge(
+        dim_date[["date", "date_id"]],
+        on="date",
+        how="left",
+        validate="many_to_one",
+    )
+
+    fact_purchases = fact_purchases.merge(
+        dim_supplier,
+        left_on="supplier",
+        right_on="supplier_name",
+        how="left",
+        validate="many_to_one",
+    )
+
+    fact_purchases = fact_purchases.rename(
+        columns={"id": "purchase_id"}
+    )
+
+    fact_purchases = fact_purchases[
+        ["purchase_id", "date_id", "product_id", "supplier_id",
+         "quantity", "unit_price", "total_cost"]
+    ]
+
+    print("\nStar schema built!")
+
+    return dim_date, dim_product, dim_supplier, fact_sales, fact_purchases

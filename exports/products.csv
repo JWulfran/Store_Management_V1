@@ -1,38 +1,38 @@
 ﻿id,sku,name,category_id,purchase_price,selling_price,stock,is_active
-98,PRD-00098,Arachides salées 500g,25,3.50,6.49,572,True
-110,PRD-00110,Bagels nature x6,20,3.29,5.49,957,True
-97,PRD-00097,Barres granola x6,25,2.91,5.29,1672,True
-94,PRD-00094,Beurre salé 454g,24,5.84,7.49,1087,True
-96,PRD-00096,Biscuits chocolat 300g,25,3.69,4.99,951,True
-95,PRD-00095,Chips nature 200g,25,3.10,4.49,1310,True
-79,PRD-00079,Coca-Cola 1L,19,2.21,2.99,1227,True
-78,PRD-00001,Coca-Cola 2L,19,2.89,4.99,1415,True
-80,PRD-00080,Coca-Cola Can 330 mL,19,0.54,0.89,1149,True
-109,PRD-00109,Croissants x6,20,3.77,6.99,1498,True
-100,PRD-00100,Dentifrice Colgate 120ml,23,3.19,4.49,863,True
-105,PRD-00105,Détergent à lessive 2L,22,11.54,14.99,1534,True
-84,PRD-00084,Eau de source 1.5L,19,1.07,1.99,1510,True
-86,PRD-00086,Eau de source 15L,19,4.55,7.99,1856,True
-85,PRD-00085,Eau de source 1L,19,1.04,1.39,807,True
-89,PRD-00089,Farine tout usage 2.5kg,18,3.37,6.49,1189,True
-92,PRD-00092,Fromage Cheddar 400g,24,5.30,8.99,1564,True
-113,PRD-00113,Haricots rouges 540ml,21,1.91,2.99,1684,True
-83,PRD-00083,Jus d'orange 1L,19,4.02,5.29,800,True
-91,PRD-00091,Lait 2% 2L,24,2.96,5.49,1069,True
-103,PRD-00103,Liquide vaisselle 700ml,22,2.79,4.99,1010,True
-111,PRD-00111,Maïs en conserve 341ml,21,1.94,2.49,1128,True
-104,PRD-00104,Nettoyant multi-surface 950ml,22,3.35,5.99,810,True
-107,PRD-00107,Pain blanc tranché,20,2.87,4.29,1253,True
-108,PRD-00108,Pain multigrain,20,3.59,4.79,716,True
-102,PRD-00102,Papier hygiénique x12,23,10.26,12.99,1114,True
-81,PRD-00081,Pepsi 2L,19,3.01,4.49,1143,True
-82,PRD-00082,Pepsi Can 330 mL,19,0.42,0.69,842,True
-88,PRD-00088,Pâtes Spaghetti 900g,18,2.83,3.99,723,True
-87,PRD-00087,Riz Basmati 5kg,18,9.68,18.99,1191,True
-106,PRD-00106,Sacs à déchets x40,22,6.04,10.99,815,True
-99,PRD-00099,Savon Dove 4 unités,23,5.48,8.99,1182,True
-101,PRD-00101,Shampoing 400ml,23,5.59,7.99,1179,True
-90,PRD-00090,Sucre blanc 2kg,18,2.95,5.79,1228,True
-114,PRD-00114,Thon en conserve 170g,21,2.16,3.49,810,True
-112,PRD-00112,Tomates en dés 796ml,21,2.50,3.29,1236,True
-93,PRD-00093,Yogourt nature 750g,24,3.95,5.99,1293,True
+98,PRD-00098,Arachides salées 500g,25,3.50,6.49,725,True
+110,PRD-00110,Bagels nature x6,20,3.29,5.49,985,True
+97,PRD-00097,Barres granola x6,25,2.91,5.29,1708,True
+94,PRD-00094,Beurre salé 454g,24,5.84,7.49,1317,True
+96,PRD-00096,Biscuits chocolat 300g,25,3.69,4.99,1132,True
+95,PRD-00095,Chips nature 200g,25,3.10,4.49,1404,True
+79,PRD-00079,Coca-Cola 1L,19,2.21,2.99,1367,True
+78,PRD-00001,Coca-Cola 2L,19,2.89,4.99,1684,True
+80,PRD-00080,Coca-Cola Can 330 mL,19,0.54,0.89,1364,True
+109,PRD-00109,Croissants x6,20,3.77,6.99,1581,True
+100,PRD-00100,Dentifrice Colgate 120ml,23,3.19,4.49,930,True
+105,PRD-00105,Détergent à lessive 2L,22,11.54,14.99,1716,True
+84,PRD-00084,Eau de source 1.5L,19,1.07,1.99,1603,True
+86,PRD-00086,Eau de source 15L,19,4.55,7.99,1961,True
+85,PRD-00085,Eau de source 1L,19,1.04,1.39,969,True
+89,PRD-00089,Farine tout usage 2.5kg,18,3.37,6.49,1308,True
+92,PRD-00092,Fromage Cheddar 400g,24,5.30,8.99,1675,True
+113,PRD-00113,Haricots rouges 540ml,21,1.91,2.99,1993,True
+83,PRD-00083,Jus d'orange 1L,19,4.02,5.29,840,True
+91,PRD-00091,Lait 2% 2L,24,2.96,5.49,1279,True
+103,PRD-00103,Liquide vaisselle 700ml,22,2.79,4.99,1425,True
+111,PRD-00111,Maïs en conserve 341ml,21,1.94,2.49,1297,True
+104,PRD-00104,Nettoyant multi-surface 950ml,22,3.35,5.99,894,True
+107,PRD-00107,Pain blanc tranché,20,2.87,4.29,1274,True
+108,PRD-00108,Pain multigrain,20,3.59,4.79,797,True
+102,PRD-00102,Papier hygiénique x12,23,10.26,12.99,1194,True
+81,PRD-00081,Pepsi 2L,19,3.01,4.49,1086,True
+82,PRD-00082,Pepsi Can 330 mL,19,0.42,0.69,1198,True
+88,PRD-00088,Pâtes Spaghetti 900g,18,2.83,3.99,783,True
+87,PRD-00087,Riz Basmati 5kg,18,9.68,18.99,1312,True
+106,PRD-00106,Sacs à déchets x40,22,6.04,10.99,787,True
+99,PRD-00099,Savon Dove 4 unités,23,5.48,8.99,1309,True
+101,PRD-00101,Shampoing 400ml,23,5.59,7.99,1127,True
+90,PRD-00090,Sucre blanc 2kg,18,2.95,5.79,1405,True
+114,PRD-00114,Thon en conserve 170g,21,2.16,3.49,892,True
+112,PRD-00112,Tomates en dés 796ml,21,2.50,3.29,1458,True
+93,PRD-00093,Yogourt nature 750g,24,3.95,5.99,1435,True
